@@ -65,12 +65,12 @@ a {
 /*classes para facilitar alinhamentos*/
 .right {
     float: right;
-    margin-left: 1em;
+    margin: 1em 0 1em 1em;
 }
   
 .left {
     float: left;
-    margin-right: 1em;
+    margin: 1em 1em 1em 0;
 }
   
 .center {
@@ -78,6 +78,10 @@ a {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+.indent {
+    text-indent: 25px;
 }
 
 /* header */
@@ -210,7 +214,7 @@ header img {
 }
 
 .content {
-    margin: 5vh 5vh 5vh 5vh;
+    margin: 5vh 15vh 5vh 15vh;
     display: flex;
     flex-flow: row wrap;
     row-gap: 2vh;
@@ -244,18 +248,35 @@ header img {
     width: 250px;
     height: 175px;
     color: white;
-    background-color: green;
+    background-color: #189f42;
+    transition: .3s;
+}
+
+.box:hover {
+    box-shadow: 8px 8px #23d45b9d;
+    transition: .3s;
 }
 
 .box p {
     margin: 0 15px 0 15px;
-    text-align: center;
+    text-align: justify;
+    font-size: 0.9em;
 }
 
 .box-title {
     font-weight: bolder;
     font-style: italic;
     font-size: 1.4em;
+}
+
+.button {
+    position: relative;
+    border: 5px solid lightblue;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: black;
+    align-self: self-end;
+    margin-right: 15px;
 }
 
 /* footer*/
@@ -369,6 +390,10 @@ footer img{
         align-items: flex-start;
     }
 
+    .content {
+        margin: 5vh 5vh 5vh 5vh;
+    }
+
     footer{
 		font: bold 14px sans-serif;
 	}
@@ -399,5 +424,13 @@ footer img{
 
     .menu {
         top: 100px
+    }
+
+    .content {
+        margin: 5vh 2.5vh 5vh 2.5vh;
+    }
+
+    .container img {
+        width: 100%;
     }
 }
