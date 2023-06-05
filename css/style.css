@@ -269,7 +269,12 @@ header img {
     font-size: 1.4em;
 }
 
-.button {
+.box-button {
+    display: none;
+}
+
+.box:hover + .box-button {
+    display: flex;
     position: relative;
     border: 5px solid lightblue;
     background-color: lightblue;
