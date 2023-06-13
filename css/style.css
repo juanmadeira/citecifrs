@@ -30,7 +30,6 @@ body {
 
 p {
     line-height: 1.5em;
-    margin: 0.5em 0em;
 }
 
 a {
@@ -75,12 +74,12 @@ a {
 /*classes para facilitar alinhamentos*/
 .right {
     float: right;
-    margin: 1em 0 1em 1em;
+    margin: 2.5em 0 2.5em 2.5em;
 }
   
 .left {
     float: left;
-    margin: 1em 1em 1em 0;
+    margin: 2.5em 2.5em 2.5em 0;
 }
   
 .center {
