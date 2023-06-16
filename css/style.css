@@ -234,17 +234,14 @@ header img {
 .container {
     width: 85%;
     margin: 2.5vh;
-    display: flex;
-    flex-flow: column wrap;
-    columns: 2;
-    column-gap: 10px;
 }
 
 .container p {
     text-align: justify;
 }
 
-.container-title {
+h1,
+h2 {
     margin: 2.5vh 0 2.5vh 0;
 }
 
