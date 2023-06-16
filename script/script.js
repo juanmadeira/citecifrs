@@ -11,7 +11,7 @@ let lmenu = document.querySelector(".menu");
 
 bmenu.addEventListener('click', e => {showMenu()});
 
-function showMenu(){
+function showMenu() {
     if (bmenu.className === "nav-icon") {
         bmenu.className += " active";
         lmenu.className += " active";
