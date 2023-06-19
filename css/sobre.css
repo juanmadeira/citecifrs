@@ -2,4 +2,23 @@
 
 .equipe {
     display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.equipe figure {
+    width: 250px;
+    text-align: center;
+}
+
+.equipe figure img {
+    border-radius: 100%;
+    padding: 20px 0;
+}
+
+.equipe figcaption p {
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
 }

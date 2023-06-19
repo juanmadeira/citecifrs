@@ -1,0 +1,20 @@
+@import url('./style.css');
+
+.equipamentos {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 90px;
+}
+
+.equipamentos figure {
+    width: 250px;
+}
+
+.equipamentos figure img {
+    padding: 20px 0;
+}
+
+.equipamentos figure p {
+    text-align: left;
+}

@@ -29,7 +29,7 @@ body {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 a {
@@ -71,7 +71,7 @@ a {
     color:#424242;
 } */
 
-/*classes para facilitar alinhamentos*/
+/* classes para facilitar alinhamentos */
 .right {
     float: right;
     margin: 2.5em 0 2.5em 2.5em;
@@ -242,7 +242,7 @@ header img {
 
 h1,
 h2 {
-    margin: 2.5vh 0 2.5vh 0;
+    margin: 25px 0 25px 0;
 }
 
 .single-column {
