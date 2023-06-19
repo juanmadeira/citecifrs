@@ -8,7 +8,7 @@
     </div>
     <div class="mobile-menu">
         <a href="./"><img src="./img/logo.png" alt="CITec - IFRS Logo"></a>
-        <div class="nav-icon">
+        <div class="nav-icon" onclick="showMenu()">
             <span></span>
             <span></span>
             <span></span>
