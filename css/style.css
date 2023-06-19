@@ -223,7 +223,7 @@ header img {
 }
 
 .content {
-    margin: 5vh 15vh 5vh 15vh;
+    margin: 5vh;
     display: flex;
     flex-flow: row wrap;
     row-gap: 2vh;
