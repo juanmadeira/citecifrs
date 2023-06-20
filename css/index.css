@@ -18,3 +18,7 @@
 .equipamentos figure p {
     text-align: left;
 }
+
+.equip-nome {
+    font-weight: bold;
+}
