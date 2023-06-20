@@ -1,13 +1,14 @@
+<!-- footer -->
 <footer>
     <div class="footer-left">
         <div><a href="./"><img src="./img/logo-png.png" alt="CITec - IFRS Logo"></a></div>
         <p>Centro de Integração Tecnológica - IFRS</p>
         <div class="footer-links">
             <a href="./" class="link-1"><span class="hover-u">Início</span></a>
-            <a href="./projetos.html"><span class="hover-u">Projetos</span></a>
             <a href="./culturamaker.html"><span class="hover-u">Cultura Maker</span></a>
-            <a href="./sobre.html"><span class="hover-u">Sobre</span></a>
+            <a href="./projetos.html"><span class="hover-u">Projetos</span></a>
             <a href="./agenda.html"><span class="hover-u">Agenda</span></a>
+            <a href="./sobre.html"><span class="hover-u">Sobre</span></a>
         </div>
         <div>
             <!-- local icon-->
