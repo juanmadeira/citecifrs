@@ -223,7 +223,7 @@ header img {
 }
 
 .content {
-    margin: 5vh;
+    margin: 25px;
     display: flex;
     flex-flow: row wrap;
     row-gap: 2vh;
@@ -233,7 +233,7 @@ header img {
 
 .container {
     width: 85%;
-    margin: 2.5vh;
+    margin: 25px;
 }
 
 .container p {
@@ -242,7 +242,7 @@ header img {
 
 h1,
 h2 {
-    margin: 25px 0 25px 0;
+    margin: 10px 0px;
 }
 
 .single-column {
@@ -407,10 +407,6 @@ footer img{
         justify-content: flex-end;
         align-content: center;
         align-items: flex-start;
-    }
-
-    .content {
-        margin: 5vh 5vh 5vh 5vh;
     }
 
     footer{
