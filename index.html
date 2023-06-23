@@ -29,52 +29,135 @@
                 <div class="container">
                     <h2 class="container-title">Equipamentos</h2>
                     <div class="equipamentos">
-                        <figure>
-                            <img src="./img/equip-flashforge-3d-finder.png" alt="Flashforge 3D Finder" style="width: 250px; height: 250px;">
-                            <figcaption>
+                        <div class="carousel">
+                            <input class="carousel-input" type="radio" id="carousel-slide--1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-slide">
+                               <img src="./img/equip-flashforge-3d-finder.png">
+                               <div class="carousel-caption">
+                                    <p class="equip-nome">FLASHFORGE 3D PRINTER</p>
+                                    <p>Modelo: Finder</p>
+                                    <p>Nome do produto: 3D Printer</p>
+                                    <p>Força: 65W</p>
+                                    <p>Materiais: PLA e ABS</p>
+                                    <p>Volume de impressão: 190x195x200mm</p>
+                               </div>
+                            </div>
+                            <input class="carousel-input" type="radio" id="carousel-slide--2" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-slide">
+                               <img src="./img/equip-creality-3d-cr10.png">
+                               <div class="carousel-caption">
+                                    <p class="equip-nome">CREALITY 3D PRINTER</p>
+                                    <p>Modelo: CR-10 V2</p>
+                                    <p>Tamanho de construção: 300x300x300mm</p>
+                                    <p>Tamanho da máquina: 500x500x650mm</p>
+                                    <p>Materiais: PLA, ABS, PETG,</p>
+                                    <p>Flexible, entre outros</p>
+                                    <p>Tecnologia de moldagem: FDM</p>
+                                    <p>Força: 350W</p>
+                                    <p>Peso: 11.5KG</p>
+                                </div>
+                            </div>
+                            <input class="carousel-input" type="radio" id="carousel-slide--3" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-slide">
+                               <img src="./img/equip-sethi-3d-s3.png">
+                               <div class="carousel-caption">
+                                    <p class="equip-nome">SETHI3D S3 PRINTER</p>
+                                    <p>Modelo: S3</p>
+                                    <p>Área de impressão: 270x270x320mm</p>
+                                    <p>Materiais: PLA, ABS, PETG,</p>
+                                    <p>Flexible, entre outros</p>
+                                    <p>Tecnologia de moldagem: FDM</p>
+                                </div>
+                            </div>
+                            <input class="carousel-input" type="radio" id="carousel-slide--4" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-slide">
+                               <img src="./img/equip-laser-cutter-rl6040.png">
+                               <div class="carousel-caption">
+                                    <p class="equip-nome">LASER CUTTER</p>
+                                    <p>Modelo: RL6040 B1</p>
+                                    <p>Área de trabalho: 600mm x 400mm</p>
+                                    <p>Opções de refrigeração: Water pump, Chiller CW3000 ou Chiller, CW5000 ou CW5200
+                                    <p>Vidro selado de CO2</p>
+                                </div>
+                            </div>
+                            <input class="carousel-input" type="radio" id="carousel-slide--5" name="carousel" aria-hidden="true" hidden="">
+                            <!-- ARROWS -->
+                            <label for="carousel-slide--4" class="carousel-arrow carousel-arrow--prev carousel-arrow--1"></label>
+                            <label for="carousel-slide--4" class="carousel-arrow carousel-arrow--next carousel-arrow--3"></label>
+                            <label for="carousel-slide--3" class="carousel-arrow carousel-arrow--prev carousel-arrow--4"></label>
+                            <label for="carousel-slide--3" class="carousel-arrow carousel-arrow--next carousel-arrow--2"></label>
+                            <label for="carousel-slide--2" class="carousel-arrow carousel-arrow--prev carousel-arrow--3"></label>
+                            <label for="carousel-slide--2" class="carousel-arrow carousel-arrow--next carousel-arrow--1"></label>
+                            <label for="carousel-slide--1" class="carousel-arrow carousel-arrow--prev carousel-arrow--2"></label>
+                            <label for="carousel-slide--1" class="carousel-arrow carousel-arrow--next carousel-arrow--4"></label>
+                            <!-- BULLETS 
+                            <ol class="carousel-bullets">
+                               <li>
+                                  <label for="carousel-slide--1" class="carousel-bullets--bullet"></label>
+                               </li>
+                               <li>
+                                  <label for="carousel-slide--2" class="carousel-bullets--bullet"></label>
+                               </li>
+                               <li>
+                                  <label for="carousel-slide--3" class="carousel-bullets--bullet"></label>
+                               </li>
+                               <li>
+                                  <label for="carousel-slide--4" class="carousel-bullets--bullet"></label>
+                               </li>
+                               <li>
+                                  <label for="carousel-slide--5" class="carousel-bullets--bullet"></label>
+                               </li>
+                            </ol> -->
+                        </div>
+                        <!--
+                        <input type="radio" name="position" />
+                        <input type="radio" name="position" />
+                        <input type="radio" name="position" checked />
+                        <input type="radio" name="position" />
+                        <input type="radio" name="position" />
+                        <div id="carousel">
+                            <div class="item">
+                                <img src="./img/equip-flashforge-3d-finder.png" alt="Flashforge 3D Finder" style="width: 250px; height: 250px;">
                                 <p class="equip-nome">FLASHFORGE 3D PRINTER</p>
                                 <p>Modelo: Finder</p>
                                 <p>Nome do produto: 3D Printer</p>
                                 <p>Força: 65W</p>
                                 <p>Materiais: PLA e ABS</p>
                                 <p>Volume de impressão: 190x195x200mm</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./img/equip-creality-3d-cr10.png" alt="Creality 3D Printer" style="width: 250px; height: 250px;">
-                            <figcaption>
+                            </div>
+                            <div class="item">
+                                <img src="./img/equip-creality-3d-cr10.png" alt="Creality 3D Printer" style="width: 250px; height: 250px;">
                                 <p class="equip-nome">CREALITY 3D PRINTER</p>
-                                <p>Modelo: CR-10 V2</p>
-                                <p>Tamanho de construção: 300x300x300mm</p>
-                                <p>Tamanho da máquina: 500x500x650mm</p>
-                                <p>Materiais: PLA, ABS, PETG,</p>
-                                <p>Flexible, entre outros</p>
-                                <p>Tecnologia de moldagem: FDM</p>
-                                <p>Força: 350W</p>
-                                <p>Peso: 11.5KG</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./img/equip-sethi-3d-s3.png" alt="Sethi3D S3 Printer" style="width: 250px; height: 250px;">
-                            <figcaption>
+                                <span>
+                                    <p>Modelo: CR-10 V2</p>
+                                    <p>Tamanho de construção: 300x300x300mm</p>
+                                    <p>Tamanho da máquina: 500x500x650mm</p>
+                                    <p>Materiais: PLA, ABS, PETG,</p>
+                                    <p>Flexible, entre outros</p>
+                                    <p>Tecnologia de moldagem: FDM</p>
+                                    <p>Força: 350W</p>
+                                    <p>Peso: 11.5KG</p>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <img src="./img/equip-sethi-3d-s3.png" alt="Sethi3D S3 Printer" style="width: 250px; height: 250px;">
                                 <p class="equip-nome">SETHI3D S3 PRINTER</p>
                                 <p>Modelo: S3</p>
                                 <p>Área de impressão: 270x270x320mm</p>
                                 <p>Materiais: PLA, ABS, PETG,</p>
                                 <p>Flexible, entre outros</p>
                                 <p>Tecnologia de moldagem: FDM</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./img/equip-laser-cutter-rl6040.png" alt="Laser Cutter RL6040" style="width: 250px; height: 250px;">
-                            <figcaption>
+                            </div>
+                            <div class="item">
+                                <img src="./img/equip-laser-cutter-rl6040.png" alt="Laser Cutter RL6040" style="width: 250px; height: 250px;">
                                 <p class="equip-nome">LASER CUTTER</p>
                                 <p>Modelo: RL6040 B1</p>
                                 <p>Área de trabalho: 600mm x 400mm</p>
                                 <p>Opções de refrigeração: Water pump, Chiller CW3000 ou Chiller, CW5000 ou CW5200
                                 <p>Vidro selado de CO2</p>
-                            </figcaption>
-                        </figure>
+                            </div>
+                        </div>
+                        -->
                     </div>
                 </div>
             </div>
