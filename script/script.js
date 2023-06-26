@@ -12,7 +12,7 @@ window.onload = htmlSections;
 
 /* querySelector const */
 const qs = (val) => {
-    return document.querySelector(val)
+    return document.querySelector(val);
 }
 
 /* menu mobile */
@@ -28,4 +28,69 @@ function showMenu() {
         buttonMenu.className = "nav-icon";
         listMenu.className = "menu";
     }
+}
+
+/* carousel */
+slide = element => {
+    if (element.classList.contains('next')) {
+        next();
+    }
+    else if (element.classList.contains('prev')) {
+        prev();
+    }
+}
+
+const slider = qs(".list"),
+swipe = new Hammer(qs(".swipe"));
+
+slider.onclick = event => {
+    slide(event.target);
+}
+
+swipe.on("swipeleft", (ev) => {
+    next();
+});
+
+swipe.on("swiperight", (ev) => {
+    prev();
+});
+
+function next() {
+    if (qs(".hide")) {
+        qs(".hide").remove(); 
+    }
+        
+    if (qs(".prev")) {
+        qs(".prev").classList.add("hide");
+        qs(".prev").classList.remove("prev");
+    }
+
+    qs(".act").classList.add("prev");
+    qs(".act").classList.remove("act");
+
+    qs(".next").classList.add("act");
+    qs(".next").classList.remove("next");
+    
+    qs(".new-next").classList.remove("new-next");
+    const addedEl = document.createElement('li');
+    qs(".list").appendChild(addedEl);
+    addedEl.classList.add("next","new-next");
+}
+
+function prev() {
+    qs(".new-next").remove();
+    qs(".next").classList.add("new-next");
+
+    qs(".act").classList.add("next");
+    qs(".act").classList.remove("act");
+  
+    qs(".prev").classList.add("act");
+    qs(".prev").classList.remove("prev");
+    
+    qs(".hide").classList.add("prev");
+    qs(".hide").classList.remove("hide");
+
+    const addedEl = document.createElement('li');
+    qs(".list").insertBefore(addedEl, qs(".list").firstChild);
+    addedEl.classList.add("hide");
 }
