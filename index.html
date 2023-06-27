@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./img/icon.png">
         <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script defer src="./script/script.js"></script>
-        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
         <title>Início | CITec - IFRS</title>
-        <!-- https://integra.ifrs.edu.br/portfolio/laboratorios/citec---centro-de-integracao-tecnologica-campus-rio-grande-30 -->
+        <!--
+        notas:
+        https://integra.ifrs.edu.br/portfolio/laboratorios/citec---centro-de-integracao-tecnologica-campus-rio-grande-30
+        https://www.cssscript.com/css-only-infinite-carousel/
+        -->
     </head>
     <body>
         <div class="wrapper">
@@ -63,26 +67,56 @@
                     <p>Opções de refrigeração: Water pump, Chiller CW3000 ou Chiller, CW5000 ou CW5200
                     <p>Vidro selado de CO2</p>   
                     -->  
-                    <div class="equipamentos">
-                        <div class="carousel">
-                            <ul class="list">
-                                <li class="hide">
-
-                                </li>
-                                <li class="prev">
-
-                                </li>
-                                <li class="act">1 SETHI3D S3 PRINTER
-
-                                </li>
-                                <li class="next">
-
-                                </li>
-                                <li class="next new-next">
-
-                                </li>
-                            </ul>
-                            <div class="swipe"></div>                              
+                    <div class="slider">
+                        <input type="radio" name="testimonial" id="t-1">
+                        <input type="radio" name="testimonial" id="t-2">
+                        <input type="radio" name="testimonial" id="t-3" checked>
+                        <input type="radio" name="testimonial" id="t-4">
+                        <div class="testimonials">
+                            <label class="item" for="t-1">
+                                <img src="./img/equip-flashforge-3d-finder.png" alt="Flashforge 3D Finder" style="width: 250px; height: 250px;">
+                                <p class="equip-nome">FLASHFORGE 3D PRINTER</p>
+                                <p>Modelo: Finder</p>
+                                <p>Nome do produto: 3D Printer</p>
+                                <p>Força: 65W</p>
+                                <p>Materiais: PLA e ABS</p>
+                                <p>Volume de impressão: 190x195x200mm</p>
+                            </label>
+                            <label class="item" for="t-2">
+                                <img src="./img/equip-creality-3d-cr10.png" alt="Creality 3D Printer" style="width: 250px; height: 250px;">
+                                <p class="equip-nome">CREALITY 3D PRINTER</p>
+                                <p>Modelo: CR-10 V2</p>
+                                <p>Tamanho de construção: 300x300x300mm</p>
+                                <p>Tamanho da máquina: 500x500x650mm</p>
+                                <p>Materiais: PLA, ABS, PETG,</p>
+                                <p>Flexible, entre outros</p>
+                                <p>Tecnologia de moldagem: FDM</p>
+                                <p>Força: 350W</p>
+                                <p>Peso: 11.5KG</p>      
+                            </label>
+                            <label class="item" for="t-3">
+                                <img src="./img/equip-sethi-3d-s3.png" alt="Sethi3D S3 Printer" style="width: 250px; height: 250px;">
+                                <p class="equip-nome">SETHI3D S3 PRINTER</p>
+                                <p>Modelo: S3</p>
+                                <p>Área de impressão: 270x270x320mm</p>
+                                <p>Materiais: PLA, ABS, PETG,</p>
+                                <p>Flexible, entre outros</p>
+                                <p>Tecnologia de moldagem: FDM</p>   
+                            </label>
+                            <label class="item" for="t-4">
+                                <img src="./img/equip-laser-cutter-rl6040.png" alt="Laser Cutter RL6040" style="width: 250px; height: 250px;">
+                                <p class="equip-nome">LASER CUTTER</p>
+                                <p>Modelo: RL6040 B1</p>
+                                <p>Área de trabalho: 600mm x 400mm</p>
+                                <p>Opções de refrigeração: Water pump, Chiller CW3000 ou Chiller, CW5000 ou CW5200
+                                <p>Vidro selado de CO2</p>   
+                            </label>
+                        </div>
+                        <div class="dots">
+                            <label for="t-1"></label>
+                            <label for="t-2"></label>
+                            <label for="t-3"></label>
+                            <label for="t-4"></label>
                         </div>
                     </div>
                 </div>
