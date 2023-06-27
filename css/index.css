@@ -1,88 +1,127 @@
 @import url('./style.css');
 
-.equipamentos {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    gap: 90px;
+.slider {
+	width: 100%;
 }
 
-.equipamentos figure {
-    width: 250px;
+.slider input {
+	display: none;
 }
 
-.equipamentos figure img {
-    padding: 20px 0;
-}
-
-.equipamentos figure p {
-    text-align: left;
-}
-
-.equip-nome {
-    font-weight: bold;
-}
-  
-.list {
-	height: 200px;
+.testimonials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%)
+	min-height: 580px;
+	perspective: 1000px;
+	overflow: hidden;
 }
 
-.list li {
-	list-style-type: none;
-	width: 200px;
-	height: 200px;
-	opacity: .25;
+.testimonials .item {
+	width: 330px;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: #094900;
 	position: absolute;
-	left: 50%;
-	margin-left: -100px;
-	border-radius: 2px;
-	background: #9C89B8;
-	transition: transform 1s, opacity 1s;
-}
-
-.list .act {
-	opacity: 1;
-}
-
-.list .prev,
-.list .next {
+	top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
 	cursor: pointer;
 }
 
-.list .prev {
-	transform: translateX(-220px) scale(.85);
+.testimonials .item p {
+	color: #ddd;
+	text-align: center;
 }
 
-.list .next {
-	transform: translateX(220px) scale(.85);
+.testimonials .item .equip-nome {
+	font-weight: bold;
 }
 
-.list .hide {
-	transform: translateX(-420px) scale(.85);
+.testimonials .item h2 {
+	font-size: 14px;
 }
 
-.list .new-next {
-	transform: translateX(420px) scale(.85);
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.list .hide,
-.list .new-next {
-	opacity: 0;
-	transition: opacity .5s, transform .5s;
+.dots label {
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: gray;
+	margin: 7px;
+	transition-duration: 0.2s;
 }
 
-.swipe {
-	width: 270px;
-	height: 200px;
-	position: absolute;
-	background-color: green;
-	border-radius: 2px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	opacity: 0;
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #000;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"] {
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"] {
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"] {
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"] {
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"] {
+	z-index: 4;
 }
