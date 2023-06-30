@@ -19,7 +19,7 @@
 }
 
 .testimonials .item {
-	width: 330px;
+	width: 365px;
 	padding: 30px;
 	border-radius: 10px;
 	background-color: #094900;
@@ -31,6 +31,10 @@
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	user-select: none;
 	cursor: pointer;
+}
+
+.testimonials .item img {
+	padding: 20px;
 }
 
 .testimonials .item p {
@@ -49,12 +53,12 @@
 }
 
 .dots label {
-	height: 5px;
 	width: 5px;
+	height: 5px;
+	margin: 7px;
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: gray;
-	margin: 7px;
 	transition-duration: 0.2s;
 }
 
