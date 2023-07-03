@@ -22,7 +22,7 @@
 	width: 365px;
 	padding: 30px;
 	border-radius: 10px;
-	background-color: #094900;
+	background-color: var(--footer-color);
 	position: absolute;
 	top: 0;
 	box-sizing: border-box;
