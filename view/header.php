@@ -1,7 +1,7 @@
 <!-- header -->
 <header>
     <div class="desktop-menu">
-        <a href="./culturamaker.html" class="header-link hover-u">Cultura Maker</a>
+        <a href="./index.html" class="header-link hover-u">Início</a>
         <a href="./projetos.html" class="header-link hover-u">Projetos</a>
         <a href="./" class="hover-u"><img src="./img/logo.png" alt="CITec - IFRS Logo"></a>
         <a href="./agenda.html" class="header-link hover-u">Agenda</a>
@@ -15,7 +15,7 @@
             <span></span>
         </div>
         <ul class="menu">
-            <li class="list"><a href="./culturamaker.html" class="header-link hover-u">Cultura Maker</a></li>
+            <li class="list"><a href="./index.html" class="header-link hover-u">Início</a></li>
             <li class="list"><a href="./projetos.html" class="header-link hover-u">Projetos</a></li>
             <li class="list"><a href="./agenda" class="header-link hover-u">Agenda</a></li>
             <li class="list"><a href="./sobre.html" class="header-link hover-u">Sobre</a></li>
