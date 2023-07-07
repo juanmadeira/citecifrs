@@ -25,10 +25,11 @@
         <p class="footer-about">
             <span>Sobre o CITec</span>
             O Centro de Integração Tecnológico (CITec), é um espaço de intersecção entre ensino, pesquisa e extensão, que atende tanto a comunidade interna quanto a externa do campus, na capacitação e execução de desenvolvimento de soluções e novas tecnologias em produtos e serviços, tendo como base conceitos de Cultura Maker, Ciência Cidadã e Sustentabilidade.
+            <a href="./sobre.html">Conheça nossa equipe!</a>
         </p>
-
         <div class="footer-icons">
-            <a href="./"><!-- rede icon --></a>
+            <a href="https://ifrs.edu.br/riogrande/" target="_blank"><img src="./img/logo-ifrs.png" alt="IFRS"></a>
+            <a href="https://www.instagram.com/citec.ifrs/" target="_blank"><img src="./img/instagram.png" id="instagram-icon" alt="Instagram"></a>
             <a href="./"><!-- rede icon --></a>
             <a href="./"><!-- rede icon --></a>
             <a href="./"><!-- rede icon --></a>
