@@ -241,7 +241,6 @@ header img {
 
 .container {
     width: 85%;
-    margin: 25px;
 }
 
 .container p {
@@ -387,6 +386,10 @@ footer img{
     width: 40px;
     margin-right: 20px;
     margin-top: 25px;
+}
+
+#instagram-icon {
+    filter: invert(100%);
 }
 
 /* media queries */
