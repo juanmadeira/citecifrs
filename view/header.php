@@ -1,4 +1,3 @@
-<!-- header -->
 <header>
     <div class="desktop-menu">
         <a href="./index.html" class="header-link hover-u">Início</a>

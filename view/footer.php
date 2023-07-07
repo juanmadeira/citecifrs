@@ -1,4 +1,3 @@
-<!-- footer -->
 <footer>
     <div class="footer-left">
         <div><a href="./"><img src="./img/logo-png.png" alt="CITec - IFRS Logo"></a></div>
