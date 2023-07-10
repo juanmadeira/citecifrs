@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./img/icon.png">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/projetos.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script defer src="./script/script.js"></script>
         <title>Projetos | CITec - IFRS</title>
@@ -16,39 +16,31 @@
             <div class="content">
                 <div class="container">
                     <h1>Projetos</h1>
-                    <form>
-                        <fieldset class="nome">
-                            <div>
-                                <label for="name">Nome:</label>
-                                <input type="text" id="name" placeholder="Insira seu nome aqui">
-                            </div>
-                        </fieldset>
-                        <fieldset class="telefone">
-                            <div>
-                                <label for="tel">Telefone:</label>
-                                <input type="tel" id="tel" placeholder="Insira seu telefone aqui">
-                            </div>
-                        </fieldset>
-                        <fieldset class="email">
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" placeholder="Insira seu email aqui">
-                            </div>
-                        </fieldset>
-                        <fieldset class="descricao">
-                            <div>
-                                <label for="message">Faça uma breve descrição de seu projeto:</label>
-                                <br>
-                                <textarea id="message" rows="5" cols="50" name="message"></textarea>
-                            </div>
-                        </fieldset>
-                        <fieldset class="enviar">
-                            <div>
-                                <input type="submit"></button>
-                                <input type="reset"></button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <h2>Cadastre seu projeto</h2>
+                    <div class="form">
+                        <form>
+                            <fieldset>
+                                <legend><span class="number">1</span> Informações do aluno</legend>
+                                <label for="name">Nome completo:</label>
+                                <input type="text" name="field1" placeholder="Insira seu nome...">
+                                <label for="email">Endereço de e-mail:</label>
+                                <input type="email" name="field2" placeholder="Insira seu e-mail...">    
+                            </fieldset>
+                            <fieldset>
+                                <legend><span class="number">2</span> Informações do projeto</legend>
+                                <label for="area">Área de atuação:</label>
+                                <select id="area" name="field1">
+                                    <option value="arte_criatividade">Arte e Criatividade</option>
+                                    <option value="mecatronicos">Dispositivos Mecatrônicos</option>
+                                    <option value="instrumentos_musicais">Instrumentos Musicais</option>
+                                    <option value="design">Design</option>
+                                </select> 
+                                <label for="about">Descrição:</label>
+                                <textarea name="field2" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                            </fieldset>
+                            <input type="submit" value="Enviar" />
+                        </form>
+                    </div>                    
                 </div>
                 <div class="container">
 
