@@ -17,7 +17,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* geral */
-
 * {
     padding: 0px;
     margin: 0px;
@@ -79,7 +78,7 @@ li {
     color:#424242;
 } */
 
-/* classes para facilitar alinhamentos */
+/* classes para facilitar estilização */
 .right {
     float: right;
     margin: 2em;
@@ -99,6 +98,10 @@ li {
 
 .indent {
     text-indent: 30px;
+}
+
+.a-hidden {
+    text-decoration: dotted;
 }
 
 /* header */

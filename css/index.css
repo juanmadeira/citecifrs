@@ -1,5 +1,11 @@
 @import url('./style.css');
 
+.culturamaker .box-button,
+.tecnomaker .box-button {
+	padding: 15px;
+	margin: 25px;
+}
+
 .carousel {
 	width: 100%;
 }
