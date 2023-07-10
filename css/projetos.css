@@ -2,9 +2,15 @@
 
 .form {
 	max-width: 500px;
-	margin: 10px auto;
+	margin: 0 auto;
 	padding: 10px 20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form h2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
 }
 
 .form fieldset {
@@ -33,7 +39,7 @@
 	padding: 10px;
 	width: 100%;
 	margin-bottom: 30px;
-	color:#8a97a0;
+	color: #8a97a0;
 	background-color: #e8eeef;
 	box-sizing: border-box; 
 	-webkit-box-sizing: border-box;

@@ -67,17 +67,6 @@ li {
     transform-origin: bottom left;
 }
 
-/* cor ao selecionar texto
-::selection {
-    text-shadow: 0 0 2px #424242;
-    color: #424242;
-}
-    
-::-moz-selection {
-    text-shadow: 0 0 2px #424242;
-    color:#424242;
-} */
-
 /* classes para facilitar estilização */
 .right {
     float: right;
@@ -255,6 +244,7 @@ h2 {
     margin: 10px 0px;
 }
 
+/* caixa saiba mais */
 .box {
     position: relative;
     display: flex;
