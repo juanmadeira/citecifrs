@@ -22,21 +22,26 @@
                             <fieldset>
                                 <legend><span class="number">1</span> Informações do aluno</legend>
                                 <label for="name">Nome completo:</label>
-                                <input type="text" name="field1" placeholder="Insira seu nome...">
+                                <input type="text" name="field1" placeholder="Insira seu nome..." required>
                                 <label for="email">Endereço de e-mail:</label>
-                                <input type="email" name="field2" placeholder="Insira seu e-mail...">    
+                                <input type="email" name="field2" placeholder="Insira seu e-mail..." required>    
                             </fieldset>
                             <fieldset>
                                 <legend><span class="number">2</span> Informações do projeto</legend>
+                                <label for="atividade">Atividade:</label>
+                                <span class="radio-options">
+                                    <input type="radio" id="individual" name="field1" value="individual" required> Individual
+                                    <input type="radio" id="grupo" name="field1" value="grupo"> Grupo
+                                </span>
                                 <label for="area">Área de atuação:</label>
-                                <select id="area" name="field1">
+                                <select id="area" name="field2">
                                     <option value="arte_criatividade">Arte e Criatividade</option>
                                     <option value="mecatronicos">Dispositivos Mecatrônicos</option>
                                     <option value="instrumentos_musicais">Instrumentos Musicais</option>
                                     <option value="design">Design</option>
                                 </select> 
                                 <label for="about">Descrição:</label>
-                                <textarea name="field2" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                                <textarea name="field3" placeholder="Sobre o seu projeto..." rows="6"></textarea>
                             </fieldset>
                             <input type="submit" value="Enviar" />
                         </form>
