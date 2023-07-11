@@ -3,14 +3,19 @@
     /* cores */
     --body-bg-color: #f9fff9;
     --hover-u-color: #1fc052;
+
     --box-color: #189f42;
     --box-hover-color : #23d45b9d;
     --box-button-color : #1eb64e;
     --box-button-hover-color: #383838b0;
+
     --footer-color: #224822;
     --footer-a-color: #189f42;
     --footer-a-hover-color: #1fc052;
     --footer-text-color: #92999f;
+    
+    --form-input-color: #e8eeef;
+    --form-focus-color: #d2d9dd;
 }
 
 /* fontes */
@@ -70,12 +75,12 @@ li {
 /* classes para facilitar estilização */
 .right {
     float: right;
-    margin: 2em;
+    margin: 0 0 0 2em;
 }
   
 .left {
     float: left;
-    margin: 2em;
+    margin: 0 2em 0 0;
 }
   
 .center {
@@ -424,6 +429,15 @@ footer img{
 }
 
 @media (orientation: portrait), (max-width: 480px) {
+    .right,
+    .left,
+    .center {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
     .desktop-menu {
         display: none;
     }
