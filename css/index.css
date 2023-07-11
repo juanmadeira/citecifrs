@@ -1,5 +1,9 @@
 @import url('./style.css');
 
+.inicio img {
+	width: 25em;
+}
+
 .culturamaker .box-button,
 .tecnomaker .box-button {
 	padding: 15px;
