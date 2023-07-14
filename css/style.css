@@ -301,7 +301,6 @@ h2 {
 /* footer */
 footer {
     font: bold 16px sans-serif;
-    width: 100%;
     padding: 40px 50px;
     background-color: var(--footer-color);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
