@@ -75,6 +75,10 @@
 	grid-template-columns: 1fr 1fr;
 }
 
+.form .datas input {
+	resize: none;
+}
+
 .form input[type="text"]:focus,
 .form input[type="date"]:focus,
 .form input[type="datetime"]:focus,
