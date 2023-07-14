@@ -27,7 +27,7 @@
 	margin-bottom: 8px;
 }
 
-.form input:invalid[type="text"],
+.form input[type="text"],
 .form input[type="date"],
 .form input[type="datetime"],
 .form input[type="email"],
@@ -48,6 +48,7 @@
 	margin-bottom: 30px;
 	background-color: var(--form-input-color);
 	box-sizing: border-box; 
+	resize: vertical;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -67,6 +68,11 @@
 
 .form .radio-options input:not(:first-child) {
 	margin-left: 25px;
+}
+
+.form .datas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .form input[type="text"]:focus,
@@ -123,6 +129,8 @@
 	background: var(--box-button-color);
 }
 
-.form input:required {
-	border: 2px solid red;
+@media (orientation: portrait), (max-width: 480px) {
+	.form .datas {
+		display: inline;
+	}
 }

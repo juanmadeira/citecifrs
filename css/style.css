@@ -386,6 +386,10 @@ footer img{
     margin-top: 25px;
 }
 
+.footer-icons img:hover {
+    opacity: .65;
+}
+
 #instagram-icon {
     filter: invert(100%);
 }
