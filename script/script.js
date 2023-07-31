@@ -29,3 +29,16 @@ function showMenu() {
         listMenu.className = "menu";
     }
 }
+
+/* validação formulário  */
+function nomePreenchido(){
+    let text = document.forms["form"]["name"].value, fillmessage = qs(".fillmessage");
+    if (text !== ""){
+        qs("#name").className -= " notfill";
+    }
+    else if (text == "") {
+        fillmessage.className += " active";
+        qs("#name").className += " notfill";
+        document.forms["form"]["name"].focus();
+    }
+}
