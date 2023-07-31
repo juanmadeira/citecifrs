@@ -38,7 +38,7 @@
 .form textarea,
 .form select {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	border: none;
+	border: 1px solid white;
 	border-radius: 4px;
 	font-size: 15px;
 	margin: 0;
@@ -56,8 +56,6 @@
 }
 
 .form input[type="radio"] {
-	border: none;
-	border-radius: 4px;
 	font-size: 15px;
 	margin: 0;
 	outline: 0;
@@ -94,7 +92,7 @@
 }
 
 .form select {
-	height:35px;
+	height: 35px;
 }
 
 .form .number {
@@ -131,6 +129,23 @@
 .form input[type="submit"]:hover,
 .form input[type="button"]:hover {
 	background: var(--box-button-color);
+}
+
+.notfill {
+	border: 1px solid red;
+}
+
+.fillmessage {
+    display: none;
+}
+
+.fillmessage.active {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    color: red;
+    font-size: 0.7em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (orientation: portrait), (max-width: 480px) {
