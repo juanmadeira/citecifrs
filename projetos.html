@@ -18,11 +18,12 @@
                     <h1>Galeria de projetos</h1>
                     <div class="form">
                         <h2>Cadastre seu projeto</h2>
-                        <form>
+                        <form name="form" id="form" method="post">
                             <fieldset>
                                 <legend><span class="number">1</span> Informações do aluno</legend>
                                 <label for="name">Nome completo:</label>
-                                <input type="text" name="field1" placeholder="Insira seu nome..." required>
+                                <div class="fillmessage">Preencha corretamente este campo obrigatório!</div>
+                                <input type="text" name="field1" id="name" placeholder="Insira seu nome..." required>
                                 <label for="email">Endereço de e-mail:</label>
                                 <input type="email" name="field2" placeholder="Insira seu e-mail..." required>    
                             </fieldset>
@@ -62,7 +63,7 @@
                                 <label for="about">Descrição:</label>
                                 <textarea name="field6" placeholder="Sobre o seu projeto..." rows="6"></textarea>
                             </fieldset>
-                            <input type="submit" value="Enviar" />
+                            <input type="submit" value="Enviar" onclick="return nomePreenchido();" />
                         </form>
                     </div>                    
                 </div>
