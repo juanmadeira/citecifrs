@@ -31,14 +31,19 @@ function showMenu() {
 }
 
 /* validação formulário  */
-function nomePreenchido(){
-    let text = document.forms["form"]["name"].value, fillmessage = qs(".fillmessage");
-    if (text !== ""){
-        qs("#name").className -= " notfill";
-    }
-    else if (text == "") {
-        fillmessage.className += " active";
-        qs("#name").className += " notfill";
-        document.forms["form"]["name"].focus();
+let campos = ["name", "email", "equip"];
+function validateForm(){
+    for (let i = 0; i < campos.length; i++){
+        let text = document.forms["form"][`${campos[i]}`].value, fillmessage = qs(".fillmessage");
+        if (text !== ""){
+            qs(`#fillmessage-${campos[i]}`).style.display = "none";
+            qs(`#${campos[i]}`).style.border = "none";
+        }
+        else if (text == "") {
+            qs(`#fillmessage-${campos[i]}`).style.display = "flex";
+            qs(`#${campos[i]}`).style.border = "1px solid red";
+            document.forms["form"][`${campos[i]}`].focus();
+        }
+        
     }
 }
