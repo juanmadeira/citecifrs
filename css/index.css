@@ -10,6 +10,7 @@
 	margin: 25px;
 }
 
+/* carrossel */
 .carousel {
 	width: 100%;
 }
@@ -130,4 +131,42 @@
 #t-3:checked ~ .testimonials label[for="t-3"],
 #t-4:checked ~ .testimonials label[for="t-4"] {
 	z-index: 4;
+}
+
+/* parallax banner */
+.parallax-banner {
+	position: relative;
+	min-height: 250px;
+	font-family: 'Arimo', sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/citec-5.jpg"); 
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.parallax-banner > h2 {
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -20.5px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+/* media queries */
+@media screen and (max-width:500px){
+  .parallax-inner{
+    min-height: 350px;
+    background-size: cover;
+  }
+  footer{
+    padding: 10px;
+  }
+  footer > p{
+    width: 100%;
+    font-size: 24px;
+  }
 }
