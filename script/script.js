@@ -34,7 +34,7 @@ function showMenu() {
 let campos = ["name", "email", "equip"];
 function validateForm(){
     for (let i = 0; i < campos.length; i++) {
-        let text = document.forms["form"][`${campos[i]}`].value, fillmessage = qs(".fillmessage");
+        let text = document.forms["form"][`${campos[i]}`].value;
         if (text !== ""){
             qs(`#fillmessage-${campos[i]}`).style.display = "none";
             qs(`#${campos[i]}`).style.border = "none";
