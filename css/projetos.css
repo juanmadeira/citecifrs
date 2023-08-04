@@ -55,6 +55,10 @@
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
+.form select[id="area"] {
+	padding: 5px;
+}
+
 .form input[type="radio"] {
 	font-size: 15px;
 	margin: 0;
@@ -71,11 +75,17 @@
 .form .datas {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
 }
 
 .form .datas input {
 	resize: none;
 }
+
+#dataTitulo1 { order: 0; }
+#dataTitulo2 { order: 1; }
+#dataCampo1 { order: 2; }
+#dataCampo2 { order: 3; }
 
 .form input[type="text"]:focus,
 .form input[type="date"]:focus,
