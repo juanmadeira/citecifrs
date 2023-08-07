@@ -47,3 +47,14 @@ function validateForm(){
         
     }
 }
+
+/* envio formulário 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbygFRg1ppM53b4rhICu5OUqxsy054YqkdypRCiHjR7TT6L0vfDQsxYgNS9Iom7_GZXi/exec';
+const form = document.forms['form'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+})*/
