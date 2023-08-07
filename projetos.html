@@ -18,31 +18,31 @@
                     <h1>Galeria de projetos</h1>
                     <div class="form">
                         <h2>Cadastre seu projeto</h2>
-                        <form name="form" id="form" method="post">
+                        <form name="form" id="form" method="POST" action="https://api.sheetmonkey.io/form/3T7TK99jjw5rxbisC2Qn4y">
                             <fieldset>
                                 <legend><span class="number">1</span> Informações do aluno</legend>
                                 <label for="name">Nome completo:</label>
                                 <div id="fillmessage-name">Preencha corretamente este campo obrigatório!</div>
-                                <input type="text" name="field1" id="name" placeholder="Insira seu nome..." required>
+                                <input type="text" name="nome" id="name" placeholder="Insira seu nome..." required>
                                 <label for="email">Endereço de e-mail:</label>
                                 <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
-                                <input type="email" name="field2" id="email" placeholder="Insira seu e-mail..." required>    
+                                <input type="email" name="email" id="email" placeholder="Insira seu e-mail..." required>    
                             </fieldset>
                             <fieldset>
                                 <legend><span class="number">2</span> Informações do projeto</legend>
                                 <label for="activity">Atividade:</label>
                                 <span class="radio-options">
-                                    <input type="radio" id="individual" name="field1" value="individual" required> Individual
-                                    <input type="radio" id="grupo" name="field1" value="grupo"> Grupo
+                                    <input type="radio" name="atividade" id="individual" value="individual" required> Individual
+                                    <input type="radio" name="atividade" id="grupo" value="grupo"> Grupo
                                 </span>
                                 <span class="datas">
                                     <label for="date" id="dataTitulo1">Data de início do projeto:</label>
-                                    <input type="date" name="field2" id="dataCampo1">
+                                    <input type="date" name="data-inicio" id="dataCampo1">
                                     <label for="date" id="dataTitulo2">Data de término do projeto:</label>
-                                    <input type="date" name="field3" id="dataCampo2">
+                                    <input type="date" name="data-termino" id="dataCampo2">
                                 </span>
                                 <label for="area">Área de atuação:</label>
-                                <select id="area" name="field4">
+                                <select id="area" name="area">
                                     <option value="arte_criatividade">Arte e Criatividade</option>
                                     <option value="mecatronicos">Dispositivos Mecatrônicos</option>
                                     <option value="instrumentos_musicais">Instrumentos Musicais</option>
@@ -61,9 +61,9 @@
                                 </select>
                                 <label for="about">Equipamentos utilizados:</label>
                                 <div id="fillmessage-equip">Preencha corretamente este campo obrigatório!</div>
-                                <textarea name="field5" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
+                                <textarea name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
                                 <label for="about">Descrição:</label>
-                                <textarea name="field6" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                                <textarea name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
                             </fieldset>
                             <input type="submit" value="Enviar" onclick="return validateForm();" />
                         </form>
