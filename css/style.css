@@ -48,6 +48,12 @@ li {
     padding: 0.5rem;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 /* hover effect */
 .hover-u {
     position: relative;
@@ -75,7 +81,7 @@ li {
 /* classes para facilitar estilização */
 .right {
     float: right;
-    margin: 0 0 0 2em;
+    margin: 0 2em;
 }
   
 .left {
@@ -141,7 +147,7 @@ header img {
     left: 0;
 }
 
-.menu.active {
+.menu .active {
     display: flex;
     flex-direction: column;
     left: 0;
