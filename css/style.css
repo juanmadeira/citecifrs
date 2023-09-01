@@ -70,8 +70,9 @@ nav img {
     width: 13em;
 }
 
-nav .navbar-nav > li{
-    padding: 0 50px;
+nav .navbar-nav > li {
+    text-align: end;
+    /*padding: 0 50px;*/
 }
 
 nav .nav-item a {
