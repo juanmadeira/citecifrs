@@ -104,6 +104,15 @@ nav .nav-item a {
     text-align: justify;
 }
 
+.img-box {
+    max-width: 250px;
+    flex: 0 0 250px;
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
 /* footer */
 footer {
     font: bold 16px sans-serif;
