@@ -71,7 +71,7 @@ nav img {
 }
 
 nav .navbar-nav > li {
-    text-align: end;
+    text-align: start;
     /*padding: 0 50px;*/
 }
 
@@ -113,7 +113,7 @@ footer {
     text-align: left;
 }
 
-footer img {
+footer .footer-links img {
     width: 11em;
 }
 
@@ -158,4 +158,13 @@ footer .footer-about {
 
 footer .footer-about-text {
     color: var(--footer-text-color);
+}
+
+footer .footer-social {
+    display: flex;
+}
+
+footer .social-icon {
+    align-content: center;
+    margin-right: 20px;
 }
