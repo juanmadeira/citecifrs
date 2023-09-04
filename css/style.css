@@ -71,8 +71,7 @@ nav img {
 }
 
 nav .navbar-nav > li {
-    text-align: start;
-    /*padding: 0 50px;*/
+    padding: 0 50px;
 }
 
 nav .nav-item a {
@@ -176,4 +175,11 @@ footer .footer-social {
 footer .social-icon {
     align-content: center;
     margin-right: 20px;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+    nav .navbar-nav > li {
+        padding: 0px;
+    }    
 }
