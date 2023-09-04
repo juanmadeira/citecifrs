@@ -1,5 +1,6 @@
 @import url('./style.css');
 
+/* equipe */
 .equipe {
     display: flex;
     justify-content: space-evenly;
