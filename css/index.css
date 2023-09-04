@@ -26,10 +26,14 @@
 }
 
 /* media queries */
-@media screen and (max-width:500px){
+@media (max-width: 500px) {
 	.parallax-inner {
 		min-height: 350px;
 		background-size: cover;
+	}
+
+	.parallax-banner > h2 {
+		margin-top: -40px;
 	}
 
 	footer {

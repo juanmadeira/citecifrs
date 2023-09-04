@@ -103,6 +103,18 @@ nav .nav-item a {
     text-align: justify;
 }
 
+.card {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 0;
+}
+
+.projetos .tecnomaker {
+    flex-flow: row-reverse nowrap;
+}
+
 .img-box {
     max-width: 250px;
     flex: 0 0 250px;
@@ -181,5 +193,24 @@ footer .social-icon {
 @media (max-width: 991px) {
     nav .navbar-nav > li {
         padding: 0px;
-    }    
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .container .card .img-box {
+        max-width: 100%;
+    }
+
+    .card p {
+        margin-top: 20px;
+    }
 }
