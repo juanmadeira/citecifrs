@@ -6,8 +6,6 @@
 	border: 1px dashed #d7dad7;
 	border-radius: 25px;
 	text-align: center;
-	min-width: 100%;
-
 }
 
 .owl-carousel .item-image img {
@@ -23,7 +21,6 @@
 	display: block;
 	font-size: .85em;
 	font-weight: 600;
-	height: 30px;
 	margin-bottom: 16px;
 	overflow: hidden;
 	text-transform: uppercase;
@@ -32,12 +29,12 @@
 .owl-carousel .item .item-info {
 	color: #000;
 	font-size: 1em;
-	height: 38px;
 	margin: 0;
 	overflow: hidden;
 }
 
 .owl-carousel .item .item-info p {
+	margin-bottom: .5rem;
 	text-align: left;
 }
   
@@ -52,13 +49,13 @@
 }
   
 .owl-dot {
-	border-radius: 50px;
-	height: 10px;
-	width: 10px;
-	display: inline-block;
 	background: rgba(127, 127, 127, 0.5);
+	border-radius: 50px;
+	display: inline-block;
+	height: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
+	width: 10px;
 }
   
 .owl-dot.active {
@@ -67,25 +64,25 @@
 
 /* parallax banner */
 .parallax-banner {
-	position: relative;
-	min-height: 250px;
-	font-family: 'Arimo', sans-serif;
+	background-attachment: fixed;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/citec-5-banner.jpg"); 
 	background-position: top center;
-	background-attachment: fixed;
 	background-size: cover;
+	font-family: 'Arimo', sans-serif;
+	min-height: 250px;
+	position: relative;
 }
 
 .parallax-banner > h2 {
-	position: absolute;
 	color: #fff;
-	top: 50%;
 	left: 0;
-	width: 100%;
+	letter-spacing: 10px;
 	margin-top: -20.5px;
+	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	top: 50%;
+	width: 100%;
 }
 
 /* media queries */
