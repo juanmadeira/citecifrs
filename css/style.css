@@ -101,7 +101,7 @@ nav .nav-item a {
 }
 
 .img-box {
-    max-width: 250px;
+    max-width: 250vw;
     flex: 0 0 250px;
 }
 
@@ -193,6 +193,10 @@ footer .social-icon {
 
     .container .card .img-box {
         max-width: 100%;
+    }
+
+    .container .card .img-box img {
+        justify-content: center;
     }
 
     .card p {
