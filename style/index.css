@@ -1,22 +1,44 @@
 @import url('./style.css');
 
 /* carousel */
-.owl-carousel .item {
+.inicio-carousel {
+	margin-bottom: 1.5rem;
+}
+
+.inicio-carousel .item {
+	opacity:0.4;
+	margin: 0 20px;
+	transform: scale(.8);
+	transition: .4s ease all;
+}
+
+.inicio-carousel .active .item {
+	opacity:1;
+	transform:scale(1);
+} 
+
+.equip-carousel .item {
 	background: #fff;
 	border: 1px dashed #d7dad7;
 	border-radius: 25px;
 	text-align: center;
+	transform: scale(.8);
+	transition: .4s ease all;
 }
 
-.owl-carousel .item-image img {
+.equip-carousel .active .item {
+	transform:scale(1);
+}
+
+.equip-carousel .item-image img {
 	padding: 1.25rem;
 }
 
-.owl-carousel .item-text {
+.equip-carousel .item-text {
 	padding: 1.25rem;
 }
   
-.owl-carousel .item .item-title {
+.equip-carousel .item .item-title {
 	color: var(--footer-color) /*#9A5053*/;
 	display: block;
 	font-size: .85em;
@@ -26,14 +48,14 @@
 	text-transform: uppercase;
 }
   
-.owl-carousel .item .item-info {
+.equip-carousel .item .item-info {
 	color: #000;
 	font-size: 1em;
 	margin: 0;
 	overflow: hidden;
 }
 
-.owl-carousel .item .item-info p {
+.equip-carousel .item .item-info p {
 	margin-bottom: .5rem;
 	text-align: left;
 }
