@@ -92,6 +92,11 @@ nav .dropdown-toggle {
     border: 0;
 }
 
+nav .dropdown-item:active {
+    color: #000;
+    background: transparent;
+}
+
 /* main */
 .container {
     width: 90%;
