@@ -80,7 +80,19 @@ nav .nav-item a {
     color: #000;
 }
 
-/* conteúdo principal da página */
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+  
+nav .dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+
+nav .dropdown-toggle {
+    border: 0;
+}
+
+/* main */
 .container {
     width: 90%;
 }
