@@ -4,7 +4,7 @@
             <div class="footer-links">
                 <img src="./img/logo-png.png">
                 <p>Centro de Integração Tecnológica - IFRS</p>
-                <a href="./" class="link-1"><span class="hover-u">Início</span></a>
+                <a href="./index.html" class="link-1"><span class="hover-u">Início</span></a>
                 <a href="./projetos.html"><span class="hover-u">Projetos</span></a>
                 <a href="./agenda.html"><span class="hover-u">Agenda</span></a>
                 <a href="./sobre.html"><span class="hover-u">Sobre</span></a>
@@ -20,7 +20,7 @@
             <p class="footer-about-text">O Centro de Integração Tecnológico (CITec), é um espaço de intersecção entre ensino, pesquisa e extensão, que atende tanto a comunidade interna quanto a externa do campus, na capacitação e execução de desenvolvimento de soluções e novas tecnologias em produtos e serviços, tendo como base conceitos de Cultura Maker, Ciência Cidadã e Sustentabilidade.</p>
             <a href="./sobre.html">Conheça nossa equipe!</a>
             <div class="py-3 footer-social">
-                <a href="https://ifrs.edu.br/riogrande/"><img src="./img/logo-ifrs.png" class="social-icon" width="30px" alt="Logo IFRS"></a>
+                <a href="https://ifrs.edu.br/riogrande/"><img src="./img/logo-ifrs-hover.png" class="social-icon image-hover" width="30px" alt="Logo IFRS"><img src="./img/logo-ifrs.png" class="social-icon" width="30px" alt="Logo IFRS"></a>
                 <a href="https://www.instagram.com/citec.ifrs/"><i class="bi bi-instagram h2 social-icon"></i></a>
             </div>
         </div>
