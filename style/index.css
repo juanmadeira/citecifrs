@@ -87,7 +87,7 @@
 /* parallax banner */
 .parallax-banner {
 	background-attachment: fixed;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/citec-5-banner.jpg"); 
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/citec-6-banner.jpg"); 
 	background-position: top center;
 	background-size: cover;
 	font-family: 'Arimo', sans-serif;
