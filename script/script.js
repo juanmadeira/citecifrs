@@ -3,7 +3,7 @@ const qs = (val) => {
     return document.querySelector(val);
 }
 
-/* carousel */
+/* owl carousel */
 $('.inicio-carousel').owlCarousel({
     autoplay:true,
     autoplayTimeout:5000,
