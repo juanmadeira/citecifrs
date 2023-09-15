@@ -92,6 +92,10 @@ nav .dropdown-toggle {
     border: 0;
 }
 
+nav .dropdown-item span {
+    font-size: 1rem;
+}
+
 nav .dropdown-item:active {
     color: #000;
     background: transparent;
