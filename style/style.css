@@ -175,6 +175,15 @@ footer .social-icon {
     margin-right: 20px;
 }
 
+footer .image-hover {
+    position: absolute;
+    opacity: 0;
+}
+
+footer .image-hover:hover{
+    opacity: 1;
+}
+
 /* media queries */
 @media (max-width: 991px) {
     nav .navbar-nav > li {
