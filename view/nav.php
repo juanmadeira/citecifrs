@@ -14,8 +14,8 @@
                         <span class="hover-u">PROJETOS</span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./projetos.html"><span class="hover-u">GALERIA</span></a></li>
-                        <li><a class="dropdown-item" href="./cadastro.html"><span class="hover-u">CADASTRO</span></a></li>
+                        <li><a class="dropdown-item" href="./projetos.html"><span class="hover-u">GALERIA DE PROJETOS</span></a></li>
+                        <li><a class="dropdown-item" href="./cadastro.html"><span class="hover-u">CADASTRE SEU PROJETO</span></a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
