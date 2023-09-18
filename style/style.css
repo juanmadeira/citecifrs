@@ -74,10 +74,11 @@ nav .navbar-nav > li {
     padding: 0 50px;
 }
 
+nav .nav-item li,
 nav .nav-item a {
+    color: #000;
     font-size: 1.3rem;
     font-weight: 450;
-    color: #000;
 }
 
 nav .dropdown:hover > .dropdown-menu {
@@ -94,6 +95,7 @@ nav .dropdown-toggle {
 
 nav .dropdown-item span {
     font-size: 1rem;
+    font-weight: 450;
 }
 
 nav .dropdown-item:active {
