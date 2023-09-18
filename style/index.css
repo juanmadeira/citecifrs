@@ -1,22 +1,85 @@
 @import url('./style.css');
 
-/* carousel */
-.inicio-carousel {
+/* carousels */
+/* inicio carousel */
+.static {
+	position: static; 
+}
+
+.cover {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.inicio-carousel .owl-slide {
+	position: relative;
+	height: 100vh;
+	background-color: lightgray;
+}
+.inicio-carousel .owl-slide-animated {
+	transform: translateX(20px);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.05s;
+}
+.inicio-carousel .owl-slide-animated.is-transitioned {
+	transform: none;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s;
+}
+.inicio-carousel .owl-slide-title.is-transitioned {
+	transition-delay: 0.2s;
+}
+.inicio-carousel .owl-slide-subtitle.is-transitioned {
+	transition-delay: 0.35s;
+}
+.inicio-carousel .owl-slide-cta.is-transitioned {
+	transition-delay: 0.5s;
+}
+
+.inicio-carousel .owl-dots,
+.inicio-carousel .owl-nav {
+	position: absolute;
+}
+
+.inicio-carousel .owl-dots .owl-dot span {
+	background: transparent;
+	border: 1px solid var(--main-black-color);
+	transition: all 0.2s ease;
+}
+
+.inicio-carousel .owl-dots .owl-dot:hover span,
+.inicio-carousel .owl-dots .owl-dot.active span {
+	background: var(--main-black-color);
+}
+
+.inicio-carousel .owl-nav {
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%);
+	margin: 0;
+}
+
+/* lab images carousel */
+.lab-carousel {
 	margin-bottom: 1.5rem;
 }
 
-.inicio-carousel .item {
+.lab-carousel .item {
 	opacity:0.4;
 	margin: 0 20px;
 	transform: scale(.8);
 	transition: .4s ease all;
 }
 
-.inicio-carousel .active .item {
+.lab-carousel .active .item {
 	opacity:1;
 	transform:scale(1);
 } 
 
+/* equipe images carousel */
 .equip-carousel .item {
 	background: #fff;
 	border: 1px dashed #d7dad7;
