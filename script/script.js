@@ -5,8 +5,8 @@ const qs = (val) => {
 
 /* owl carousel */
 $('.inicio-carousel').owlCarousel({
-    animateOut: 'slideOutUp',
-    autoplayTimeout:2000,
+    animateOut:'animate__slideOutUp',
+    autoplayTimeout:10000,
     autoplay:true,
     dots:false,
     loop:true,
