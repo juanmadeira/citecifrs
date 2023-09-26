@@ -2,64 +2,173 @@
 
 /* carousels */
 /* inicio carousel */
-.static {
-	position: static; 
-}
-
-.cover {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.inicio-carousel .owl-slide {
-	position: relative;
+.inicio-carousel .item {
 	height: 100vh;
-	background-color: lightgray;
-}
-.inicio-carousel .owl-slide-animated {
-	transform: translateX(20px);
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.05s;
-}
-.inicio-carousel .owl-slide-animated.is-transitioned {
-	transform: none;
-	opacity: 1;
-	visibility: visible;
-	transition: all 0.5s;
-}
-.inicio-carousel .owl-slide-title.is-transitioned {
-	transition-delay: 0.2s;
-}
-.inicio-carousel .owl-slide-subtitle.is-transitioned {
-	transition-delay: 0.35s;
-}
-.inicio-carousel .owl-slide-cta.is-transitioned {
-	transition-delay: 0.5s;
+	position: relative;
 }
 
-.inicio-carousel .owl-dots,
-.inicio-carousel .owl-nav {
+.inicio-carousel .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.inicio-carousel .item .cover {
+	padding: 75px 0;
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
 }
 
-.inicio-carousel .owl-dots .owl-dot span {
-	background: transparent;
-	border: 1px solid var(--main-black-color);
-	transition: all 0.2s ease;
+.inicio-carousel .item .cover .header-content {
+	position: relative;
+	padding: 56px;
+	overflow: hidden;
 }
 
-.inicio-carousel .owl-dots .owl-dot:hover span,
-.inicio-carousel .owl-dots .owl-dot.active span {
-	background: var(--main-black-color);
+.inicio-carousel .item .cover .header-content .line {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border: 9px solid #fff;
+	-webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+	clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
 }
 
-.inicio-carousel .owl-nav {
-	left: 50%;
-	top: 10%;
-	transform: translateX(-50%);
-	margin: 0;
+.inicio-carousel .item .cover .header-content h2 {
+	font-weight: 300;
+	font-size: 35px;
+	color: #fff;
+}
+
+.inicio-carousel .item .cover .header-content h1 {
+	font-size: 56px;
+	font-weight: 600;
+	margin: 5px 0 20px;
+	word-spacing: 3px;
+	color: #fff;
+}
+
+.inicio-carousel .item .cover .header-content h4 {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 36px;
+	color: #fff;
+}
+
+.inicio-carousel .owl-item.active h1 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-item.active h2 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-item.active h4 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInUp;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-item.active .line {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInLeft;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-nav .owl-prev {
+	position: absolute;
+	left: 15px;
+	top: 43%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	border-radius: 0;
+}
+
+.inicio-carousel .owl-nav .owl-prev span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.inicio-carousel .owl-nav .owl-prev:focus {
+	outline: 0;
+}
+
+.inicio-carousel .owl-nav .owl-prev:hover {
+	background: #000;
+}
+
+.inicio-carousel .owl-nav .owl-next {
+	position: absolute;
+	right: 15px;
+	top: 43%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	border-radius: 0;
+}
+
+.inicio-carousel .owl-nav .owl-next span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.inicio-carousel .owl-nav .owl-next:focus {
+	outline: 0;
+}
+
+.inicio-carousel .owl-nav .owl-next:hover {
+	background: #000;
+}
+
+.inicio-carousel:hover .owl-prev {
+	left: 0px;
+	opacity: 1;
+}
+
+.inicio-carousel:hover .owl-next {
+	right: 0px;
+	opacity: 1;
 }
 
 /* lab images carousel */
