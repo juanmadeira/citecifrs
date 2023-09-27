@@ -14,12 +14,15 @@
 }
 
 .equipe figure img {
-    border-radius: 100%;
-    padding: 20px 0;
+    width: 150px;
+}
+
+.equipe figcaption p:first-child {
+    padding-top: 1vw;
+    font-weight: bold;
 }
 
 .equipe figcaption p {
     text-align: center;
     font-size: 0.85rem;
-    line-height: 1.5rem;
 }
