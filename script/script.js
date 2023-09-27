@@ -13,6 +13,7 @@ $('.inicio-carousel').owlCarousel({
     margin:0,
     mouseDrag:false,
     nav:true,
+    responsiveClass: true,
     responsive:{
         0:{
             items:1
