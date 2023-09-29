@@ -93,3 +93,21 @@ $('.equip-carousel').owlCarousel({
     }
     }
 });
+
+/* validação formulário  */
+let campos = ["name", "email", "equip"];
+function validateForm(){
+    for (let i = 0; i < campos.length; i++) {
+        let text = document.forms["form"][`${campos[i]}`].value;
+        if (text !== ""){
+            qs(`#fillmessage-${campos[i]}`).style.display = "none";
+            qs(`#${campos[i]}`).style.border = "none";
+        }
+        else if (text == "") {
+            qs(`#fillmessage-${campos[i]}`).style.display = "flex";
+            qs(`#${campos[i]}`).style.border = "1px solid red";
+            document.forms["form"][`${campos[i]}`].focus();
+        }
+        
+    }
+}
