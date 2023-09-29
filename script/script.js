@@ -3,7 +3,7 @@ const qs = (val) => {
     return document.querySelector(val);
 }
 
-/* owl carousel */
+/* owlCarousel */
 $('.inicio-carousel').owlCarousel({
     animateOut:'animate__slideOutUp',
     autoplayTimeout:10000,
@@ -94,7 +94,7 @@ $('.equip-carousel').owlCarousel({
     }
 });
 
-/* validação formulário  */
+/* validação do formulário  */
 let campos = ["name", "email", "equip"];
 function validateForm(){
     for (let i = 0; i < campos.length; i++) {
