@@ -1,5 +1,24 @@
 @import url('./style.css');
 
+.iframeMap {
+    width: 50%;
+    height: 250px;
+}
+
+.bubble {
+	background: var(--box-color);
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
 /* equipe */
 .equipe {
     display: flex;
@@ -25,4 +44,11 @@
 .equipe figcaption p {
     text-align: center;
     font-size: 0.85rem;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .iframeMap {
+        width: 100%;
+    }
 }

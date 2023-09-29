@@ -95,7 +95,7 @@ form select {
 	height: 35px;
 }
 
-form .number {
+form .bubble {
 	background: var(--box-color);
 	color: #fff;
 	height: 30px;
