@@ -103,6 +103,10 @@ nav .nav-item a {
     font-weight: 450;
 }
 
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
 nav .dropdown-toggle {
     border: 0;
 }

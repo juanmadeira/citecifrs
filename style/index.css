@@ -2,7 +2,7 @@
 
 /* inicio carousel */
 .inicio-carousel .item {
-	height: 80vh;
+	height: 81vh;
 	position: relative;
 }
 
@@ -45,12 +45,12 @@
 
 .inicio-carousel .item .cover .header-content h2 {
 	font-weight: 300;
-	font-size: 35px;
+	font-size: 3rem;
 	color: #fff;
 }
 
 .inicio-carousel .item .cover .header-content h1 {
-	font-size: 56px;
+	font-size: 4rem;
 	font-weight: 600;
 	margin: 5px 0 20px;
 	word-spacing: 3px;
@@ -58,7 +58,7 @@
 }
 
 .inicio-carousel .item .cover .header-content h4 {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 36px;
 	color: #fff;
@@ -278,7 +278,19 @@
 }
 
 /* media queries */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+	.inicio-carousel .item .cover .header-content h2 {
+		font-size: 1.25rem;
+	}
+	
+	.inicio-carousel .item .cover .header-content h1 {
+		font-size: 2rem;
+	}
+	
+	.inicio-carousel .item .cover .header-content h4 {
+		font-size: 1rem;
+	}
+
 	.parallax-inner {
 		min-height: 350px;
 		background-size: cover;
