@@ -88,6 +88,10 @@ a {
 }
 
 /* navbar */
+nav {
+    z-index: 2;
+}
+
 nav img {
     width: 13em;
 }
