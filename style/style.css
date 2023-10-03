@@ -113,6 +113,7 @@ nav .navbar-toggler:focus {
 
 nav .dropdown-toggle {
     border: 0;
+    font-weight: 450;
 }
 
 nav .dropdown-item span {
