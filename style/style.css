@@ -243,6 +243,7 @@ footer .image-hover:hover{
 
 @media (max-width: 768px) {
     .container .card {
+        align-items: center;
         flex-direction: column;
         max-width: 100%;
     }

@@ -1,5 +1,9 @@
 @import url('./style.css');
 
+.iframeLoc p {
+    line-height: .75rem;
+}
+
 .iframeMap {
     width: 50%;
     height: 250px;
@@ -28,7 +32,7 @@
 }
 
 .equipe figure {
-    width: 250px;
+    width: 300px;
     text-align: center;
 }
 
