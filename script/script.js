@@ -42,7 +42,7 @@ $('.lab-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            stagePadding: 10
+            stagePadding: 0
         },
         600:{
             items:1,
