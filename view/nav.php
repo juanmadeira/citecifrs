@@ -15,7 +15,7 @@
                     </button>
                     <ul class="dropdown-menu animate__animated animate__fadeIn">
                         <li><a class="dropdown-item" href="./projetos.html"><span class="hover-u">GALERIA DE PROJETOS</span></a></li>
-                        <li><a class="dropdown-item" href="./cadastro.html"><span class="hover-u">CADASTRE SEU PROJETO</span></a></li>
+                        <li><a class="dropdown-item" href="./cadastro.html"><span class="hover-u">CADASTRO DE PROJETO</span></a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
