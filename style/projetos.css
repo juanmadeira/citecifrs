@@ -1,0 +1,12 @@
+@import url('./style.css');
+
+.card-img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
