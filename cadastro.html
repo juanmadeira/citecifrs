@@ -53,31 +53,31 @@
             <section class="py-5">
                 <div class="container">
                     <h1 class="fw-light mb-3">Cadastre seu Projeto</h1>
-                    <form class="m-auto" name="form" id="form" method="POST" action="https://api.sheetmonkey.io/form/3T7TK99jjw5rxbisC2Qn4y">
+                    <form class="m-auto py-3" name="form" id="form" method="POST" action="https://api.sheetmonkey.io/form/3T7TK99jjw5rxbisC2Qn4y">
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
                             <label class="mb-2" for="name">Nome completo:</label>
                             <div id="fillmessage-name">Preencha corretamente este campo obrigatório!</div>
-                            <input type="text" name="nome" id="name" placeholder="Insira seu nome..." required>
+                            <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." required />
                             <label class="mb-2" for="email">Endereço de e-mail:</label>
                             <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
-                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail..." required>    
+                            <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." required />    
                         </fieldset>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">2</span> Informações do projeto</legend>
                             <label class="mb-2" for="activity">Atividade:</label>
                             <span class="radio-options">
-                                <input type="radio" name="atividade" id="individual" value="individual" required> Individual
-                                <input type="radio" name="atividade" id="grupo" value="grupo"> Grupo
+                                <input class="mb-3" type="radio" name="atividade" id="individual" value="individual" required /> Individual
+                                <input class="mb-3" type="radio" name="atividade" id="grupo" value="grupo" /> Grupo
                             </span>
                             <span class="datas">
                                 <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
-                                <input type="date" name="data-inicio" id="dataCampo1">
+                                <input class="mb-3" type="date" name="data-inicio" id="dataCampo1" />
                                 <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
-                                <input type="date" name="data-termino" id="dataCampo2">
+                                <input class="mb-3" type="date" name="data-termino" id="dataCampo2" />
                             </span>
                             <label class="mb-2" for="area">Área de atuação:</label>
-                            <select id="area" name="area">
+                            <select class="mb-3" id="area" name="area">
                                 <option value="arte_criatividade">Arte e Criatividade</option>
                                 <option value="mecatronicos">Dispositivos Mecatrônicos</option>
                                 <option value="instrumentos_musicais">Instrumentos Musicais</option>
@@ -94,11 +94,16 @@
                                 <option value="acessibilidade">Acessibilidade</option>
                                 <option value="empreendimento">Empreendimento</option>
                             </select>
+                            <p>Envie uma imagem do seu projeto:</p>
+                            <label class="mb-3 file-button" for="image">
+                                <input type="file" id="image" name="image" accept="image/png, image/jpeg" />
+                            </label>
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
                             <div id="fillmessage-equip">Preencha corretamente este campo obrigatório!</div>
-                            <textarea name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
+                            <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
                             <label class="mb-2" for="about">Descrição:</label>
-                            <textarea name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                            <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                            
                         </fieldset>
                         <input type="submit" value="Enviar" onclick="return validateForm();" />
                     </form>
