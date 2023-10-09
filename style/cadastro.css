@@ -33,7 +33,6 @@ form select {
 	border-radius: 4px;
 	font-size: 15px;
 	margin: 0;
-	margin-bottom: 30px;
 	outline: 0;
 	padding: 10px;
 	resize: vertical;
@@ -138,6 +137,14 @@ form input[type="button"]:hover {
 	color: red;
     font-size: 0.7em;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.form-sucess p {
+	font-size: 1.2rem
+}
+
+.check-svg {
+	filter: invert(40%) sepia(71%) saturate(3368%) hue-rotate(120deg) brightness(96%) contrast(81%);
 }
 
 @media (orientation: portrait), (max-width: 480px) {
