@@ -132,7 +132,9 @@ form input[type="button"]:hover {
 
 #fillmessage-name,
 #fillmessage-email,
-#fillmessage-equip {
+#fillmessage-equip,
+#fillmessage-subject,
+#fillmessage-message {
     display: none;
 	color: red;
     font-size: 0.7em;
