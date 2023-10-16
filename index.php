@@ -33,7 +33,7 @@
                                 <h2>Projeto de ensino</h2>
                                 <h1>CULTURA MAKER</h1>
                                 <h4>Inscrições abertas para o minicurso de Impressão 3D</h4>
-                                <a href="./culturamaker.html"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
+                                <a href="./culturamaker.php"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                                 <h2>Projeto de extensão</h2>
                                 <h1>TECNOMAKER 4.0</h1>
                                 <h4>Oficina de Programação, Robótica e Modelagem 3D</h4>
-                                <a href="./tecnomaker.html"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
+                                <a href="./tecnomaker.php"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 <h2>Desenvolva o seu projeto</h2>
                                 <h1>OPEN DAY</h1>
                                 <h4>Reserve já seu horário!</h4>
-                                <a href="./agenda.html"><button type="button" class="btn btn-outline-success">Clique e confira</button></a>
+                                <a href="./agenda.php"><button type="button" class="btn btn-outline-success">Clique e confira</button></a>
                             </div>
                         </div>
                     </div>
@@ -114,10 +114,12 @@
                             <div class="item-text">
                                 <span class="item-title">IMPRESSORA 3D CREALITY</span>
                                 <span class="item-info">
-                                    <p>Modelo: Finder</p>
-                                    <p>Volume de impressão: 190x195x200mm</p>
-                                    <p>Materiais: PLA e ABS</p>
-                                    <p>Força: 65W</p>
+                                    <p>Modelo: CR-10 V2</p>
+                                    <p>Tamanho de construção: 300x300x300mm</p>
+                                    <p>Materiais: PLA, ABS, PETG,</p>
+                                    <p>Flexible, entre outros</p>
+                                    <p>Tecnologia de moldagem: FDM</p>
+                                    <p>Força: 350W</p>
                                 </span>
                             </div>
                         </div>
@@ -128,10 +130,11 @@
                             <div class="item-text">
                                 <span class="item-title">IMPRESSORA 3D SETHI3D</span>
                                 <span class="item-info">
-                                    <p>Modelo: Finder</p>
-                                    <p>Volume de impressão: 190x195x200mm</p>
-                                    <p>Materiais: PLA e ABS</p>
-                                    <p>Força: 65W</p>
+                                    <p>Modelo: S3</p>
+                                    <p>Área de impressão: 270x270x320mm</p>
+                                    <p>Materiais: PLA, ABS, PETG,</p>
+                                    <p>Flexible, entre outros</p>
+                                    <p>Tecnologia de moldagem: FDM</p>
                                 </span>
                             </div>
                         </div>
@@ -142,10 +145,10 @@
                             <div class="item-text">
                                 <span class="item-title">CORTADOR A LASER</span>
                                 <span class="item-info">
-                                    <p>Modelo: Finder</p>
-                                    <p>Volume de impressão: 190x195x200mm</p>
-                                    <p>Materiais: PLA e ABS</p>
-                                    <p>Força: 65W</p>
+                                    <p>Modelo: RL6040 B1</p>
+                                    <p>Área de trabalho: 600mm x 400mm</p>
+                                    <p>Opções de refrigeração: Water pump, Chiller CW3000 ou Chiller, CW5000 ou CW5200
+                                    <p>Vidro selado de CO₂</p>
                                 </span>
                             </div>
                         </div>
@@ -159,14 +162,14 @@
                 <div class="container">
                     <h2 class="fw-light">Cultura Maker</h2>
                     <div class="card culturamaker">
-                        <div class="img-box"><a href="./culturamaker.html"><img src="./img/logo-cultura.png" class="img-fluid p-3" width="250vw" /></a></div>
+                        <div class="img-box"><a href="./culturamaker.php"><img src="./img/logo-cultura.png" class="img-fluid p-3" width="250vw" /></a></div>
                         <p>Baseando-se na ideia de que as pessoas devem ser capazes da fabricar, construir, reparar e alterar objetos dos mais variados tipos e com diversas funções, o Cultura Maker é um projeto ensino aberto para a comunidade acadêmica do IFRS Campus Rio Grande. É uma ótima oportunidade para desenvolver a criatividade através dos minicursos de modelagem, impressão 3D, corte à laser e Arduíno. As oficinas são abertas pra toda a comunidade acadêmica do IFRS - Campus Rio Grande, alunos do integrado, subsequente, superior e também para os professores do campus.</p>
                     </div>
                 </div>
                 <div class="container">
                     <h2 class="fw-light">TecnoMaker 4.0</h2>
                     <div class="card tecnomaker">
-                        <div class="img-box"><a href="./tecnomaker.html"><img src="./img/logo-tecnomaker.png" class="img-fluid p-3" width="250vw" /></a></div>
+                        <div class="img-box"><a href="./tecnomaker.php"><img src="./img/logo-tecnomaker.png" class="img-fluid p-3" width="250vw" /></a></div>
                         <p>O TecnoMaker 4.0 é um projeto de extensão, ou seja, voltado para as pessoas que não estudam ou trabalham no IFRS - Campus Rio Grande. É focado na iniciação tecnológica nas escolas públicas de ensino fundamental de Rio Grande. Dentre os temas a serem abordados nas oficinas estão: pensamento computacional, robótica e Cultura Maker.</p>
                     </div>
                 </div>
