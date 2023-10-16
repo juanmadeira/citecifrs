@@ -1,12 +1,13 @@
 @import url('./style.css');
 
-.card-img {
-    max-width: 200px;
-    max-height: 200px;
+.gallery-item img {
+    max-width: 75%;
+    max-height: 75%;
+    margin-bottom: 1em;
     width: auto;
     height: auto;
 }
 
-.card-title {
+.gallery-title {
     font-weight: bold;
 }
