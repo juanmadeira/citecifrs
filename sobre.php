@@ -18,36 +18,9 @@
     </head>
     <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand hover-u" href="./index.html"><img src="./img/logo.png" alt="Logo CITec"></a>
-                <button class="m-3 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse animate__animated animate__fadeIn" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link hover-u" href="./index.html">INÍCIO</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-default btn-lg px-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="hover-u">PROJETOS</span>
-                            </button>
-                            <ul class="dropdown-menu animate__animated animate__fadeIn">
-                                <li><a class="dropdown-item" href="./projetos.html"><span class="hover-u">GALERIA DE PROJETOS</span></a></li>
-                                <li><a class="dropdown-item" href="./cadastro.html"><span class="hover-u">CADASTRO DE PROJETO</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-u" href="./agenda.html">AGENDA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-u" href="./sobre.html">SOBRE</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php
+            include('./view/nav.php');
+        ?>
         <!-- conteúdo principal -->
         <main>
             <section class="py-5">
@@ -106,33 +79,8 @@
             </section>
         </main>
         <!-- footer -->
-        <footer class="p-5">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <div class="footer-links">
-                        <img src="./img/logo-png.png" />
-                        <p>Centro de Integração Tecnológica - IFRS</p>
-                        <a href="./index.html" class="link-1"><span class="hover-u">Início</span></a>
-                        <a href="./projetos.html"><span class="hover-u">Projetos</span></a>
-                        <a href="./agenda.html"><span class="hover-u">Agenda</span></a>
-                        <a href="./sobre.html"><span class="hover-u">Sobre</span></a>
-                    </div>
-                    <div class="py-3">
-                        <p>R. Eng. Alfredo Huck, 475 Rio Grande, RS</p>
-                        <p>(53) 3233-8603</p>
-                        <p><a href="mailto:citec@riogrande.ifrs.edu.br">citec@riogrande.ifrs.edu.br</a></p>
-                    </div>
-                </div>
-                <div class="col-md-8 footer-about">
-                    <p>Sobre o CITec</p>
-                    <p class="footer-about-text">O Centro de Integração Tecnológico (CITec), é um espaço de intersecção entre ensino, pesquisa e extensão, que atende tanto a comunidade interna quanto a externa do campus, na capacitação e execução de desenvolvimento de soluções e novas tecnologias em produtos e serviços, tendo como base conceitos de Cultura Maker, Ciência Cidadã e Sustentabilidade.</p>
-                    <a href="./sobre.html">Conheça nossa equipe!</a>
-                    <div class="py-3 footer-social">
-                        <a href="https://ifrs.edu.br/riogrande/"><img src="./img/logo-ifrs-hover.png" class="social-icon image-hover" width="30px" alt="Logo IFRS"><img src="./img/logo-ifrs.png" class="social-icon" width="30px" alt="Logo IFRS"></a>
-                        <a href="https://www.instagram.com/citec.ifrs/"><i class="bi bi-instagram h2 social-icon"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+            include('./view/footer.php');
+        ?>
     </body>
 </html>
