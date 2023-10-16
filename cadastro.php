@@ -69,7 +69,7 @@
                             </select>
                             <p>Envie uma imagem do seu projeto:</p>
                             <label class="mb-3 file-button" for="image">
-                                <input type="file" id="image" name="image" accept="image/png, image/jpeg" />
+                                <input type="file" name="imagem" id="image" accept="image/png, image/jpeg" />
                             </label>
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
                             <div id="fillmessage-equip">Preencha corretamente este campo obrigatório!</div>
