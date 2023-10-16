@@ -76,9 +76,8 @@
                             <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
                             <label class="mb-2" for="about">Descrição:</label>
                             <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
-                            
                         </fieldset>
-                        <input type="submit" value="Enviar" onclick="return validateForm();" />
+                        <input type="submit" value="Enviar" onclick="return validateFormCadastro();" />
                     </form>
                 </div>
             </section>
