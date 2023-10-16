@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 col-md">
             <div class="footer-links">
-                <img src="./img/logo-png.png">
+                <img src="./img/logo-png.png" />
                 <p>Centro de Integração Tecnológica - IFRS</p>
                 <a href="./index.html" class="link-1"><span class="hover-u">Início</span></a>
                 <a href="./projetos.html"><span class="hover-u">Projetos</span></a>
