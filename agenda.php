@@ -28,6 +28,15 @@
                     <h1 class="fw-light mb-3">Agenda</h1>
                     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23189f42&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showDate=0&showPrint=0&showTz=1&showCalendars=0&hl=pt_BR&showTabs=0&src=Y182ZDFiM2EwNmEyYTY2YjJhZTQ0YjFkMGI2MDE3YjI2ODJhOGJmM2MyNjZjN2ZkZjc4M2YyN2JlOWJhYWIyZDQyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA" style="border-width:0" width="100%" height="720" frameborder="0" scrolling="no"></iframe>                </div>
             </section>
+            <section class="py-5">
+                <div class="container">
+                    <form method="POST" action="./send-mail.php">
+                    <input type="email" name="email" class="form-control mail-field" required="required" placeholder="Insira seu e-mail..." />
+                    <input type="text" name="subject" class="form-control" required="required" placeholder="Insira o assunto..." />
+                    <textarea name="message" id="message" class="form-control" rows="8" required="required" placeholder="Escreva a mensagem..."></textarea>
+                    <button type="submit" class="btn btn-sucess rbtn">Enviar</button>
+                </div>
+            </section>
         </main>
         <!-- footer -->
         <?php
