@@ -44,13 +44,13 @@
                         </div>    
                         <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
                             <img src="./img/projetos/3d-object-template.png" class="img-fluid" alt="Projeto 3" />
-                            <h5 class="gallery-title">Projeto 3</h5>
-                            <p class="gallery-text">Descrição do Projeto 3.</p>
+                            <h5 class="gallery-title">Projeto 4</h5>
+                            <p class="gallery-text">Descrição do Projeto 4.</p>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
                             <img src="./img/projetos/3d-object-template.png" class="img-fluid" alt="Projeto 3" />
-                            <h5 class="gallery-title">Projeto 3</h5>
-                            <p class="gallery-text">Descrição do Projeto 3.</p>
+                            <h5 class="gallery-title">Projeto 5</h5>
+                            <p class="gallery-text">Descrição do Projeto 5.</p>
                         </div>
                     </div>
                 </div>
