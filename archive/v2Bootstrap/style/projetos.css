@@ -1,0 +1,13 @@
+@import url('./style.css');
+
+.gallery-item img {
+    max-width: 75%;
+    max-height: 75%;
+    margin-bottom: 1em;
+    width: auto;
+    height: auto;
+}
+
+.gallery-title {
+    font-weight: bold;
+}

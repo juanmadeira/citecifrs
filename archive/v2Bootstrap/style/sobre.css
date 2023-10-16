@@ -1,0 +1,58 @@
+@import url('./style.css');
+
+.iframeLoc p {
+    line-height: .75rem;
+}
+
+.iframeMap {
+    width: 50%;
+    height: 250px;
+}
+
+.bubble {
+	background: var(--box-color);
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+/* equipe */
+.equipe {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.equipe figure {
+    width: 300px;
+    text-align: center;
+}
+
+.equipe figure img {
+    width: 150px;
+}
+
+.equipe figcaption p:first-child {
+    padding-top: 1vw;
+    font-weight: bold;
+}
+
+.equipe figcaption p {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .iframeMap {
+        width: 100%;
+    }
+}

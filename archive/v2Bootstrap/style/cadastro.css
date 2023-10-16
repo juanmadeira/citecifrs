@@ -1,0 +1,154 @@
+@import url('./style.css');
+
+/* formulário */
+form {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	max-width: 800px;
+}
+
+form fieldset {
+	border: none;
+}
+
+form legend {
+	font-size: 1.4em;
+}
+
+form label {
+	display: block;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form textarea,
+form select {
+	background-color: var(--form-input-color);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	resize: vertical;
+	width: 100%;
+	box-sizing: border-box; 
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+form select[id="area"] {
+	padding: 5px;
+}
+
+form input[type="radio"] {
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+ 	margin-bottom: 30px;
+	column-gap: 50px;
+}
+
+form .radio-options input:not(:first-child) {
+	margin-left: 25px;
+}
+
+form .datas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+}
+
+form .datas input {
+	resize: none;
+}
+
+#dataTitulo1 { order: 0; }
+#dataTitulo2 { order: 1; }
+#dataCampo1 { order: 2; }
+#dataCampo2 { order: 3; }
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="datetime"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="time"]:focus,
+form input[type="url"]:focus,
+form input[type="radio"]:focus,
+form textarea:focus,
+form select:focus {
+	background: var(--form-focus-color);
+}
+
+form select {
+	height: 35px;
+}
+
+form .bubble {
+	background: var(--box-color);
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+form input[type="submit"],
+form input[type="button"] {
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: var(--box-color);
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid var(--box-color);
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+	background: var(--box-button-color);
+}
+
+#fillmessage-name,
+#fillmessage-email,
+#fillmessage-equip {
+    display: none;
+	color: red;
+    font-size: 0.7em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-sucess p {
+	font-size: 1.2rem
+}
+
+.check-svg {
+	filter: invert(40%) sepia(71%) saturate(3368%) hue-rotate(120deg) brightness(96%) contrast(81%);
+}
+
+@media (orientation: portrait), (max-width: 480px) {
+	form .datas {
+		display: inline;
+	}
+}

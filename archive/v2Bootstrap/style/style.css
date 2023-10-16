@@ -1,0 +1,262 @@
+/*
+   ____________________________   ______________  _____
+  / ____/  _/_  __/ ____/ ____/  /  _/ ____/ __ \/ ___/
+ / /    / /  / / / __/ / /       / // /_  / /_/ /\__ \ 
+/ /____/ /  / / / /___/ /___   _/ // __/ / _, _/___/ / 
+\____/___/ /_/ /_____/\____/  /___/_/   /_/ |_|/____/  
+
+*/
+
+/* variáveis do css */
+:root {
+    /* cores */
+    --body-bg-color: #f9fff9;
+    --hover-u-color: #1fc052;
+
+    --box-color: #189f42;
+    --box-hover-color : #23d45b9d;
+    --box-button-color : #1eb64e;
+    --box-button-hover-color: #383838b0;
+
+    --footer-color: #224822;
+    --footer-a-color: #349b44;
+    --footer-a-hover-color: #1fc052;
+    --footer-text-color: #92999f;
+    
+    --form-input-color: #e8eeef;
+    --form-focus-color: #d2d9dd;
+}
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Arimo|Oswald"); 
+
+/* geral */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: var(--body-bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.274), 
+    0px 2px 4px rgba(0, 0, 0, 0.274), 
+    0px 4px 8px rgba(0, 0, 0, 0.274), 
+    0px 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    color: #000;
+}
+
+/* hover effect */
+.hover-u {
+    position: relative;
+    display: inline-block;
+}
+  
+.hover-u::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: var(--hover-u-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-u:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* navbar */
+nav {
+    z-index: 2;
+}
+
+nav img {
+    width: 13em;
+}
+
+nav .navbar-nav > li {
+    padding: 0 50px;
+}
+
+nav .nav-item li,
+nav .nav-item a {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav .dropdown-toggle {
+    border: 0;
+    font-weight: 450;
+}
+
+nav .dropdown-item span {
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+nav .dropdown-item:active {
+    color: #000;
+    background: transparent;
+}
+
+/* main */
+.container {
+    width: 90%;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.card {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 0;
+}
+
+.projetos .tecnomaker {
+    flex-flow: row-reverse nowrap;
+}
+
+.img-box {
+    max-width: 250vw;
+    flex: 0 0 250px;
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
+/* footer */
+footer {
+    font: bold 16px sans-serif;
+    background-color: var(--footer-color);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+footer .footer-links img {
+    width: 11em;
+}
+
+footer .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+footer .footer-links .link-1:before {
+    content: none;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 400;
+	vertical-align: middle;
+	margin: 0;
+}
+
+footer a {
+    color: var(--footer-a-color);
+	text-decoration: none;
+}
+
+footer a:hover {
+    color:  var(--footer-a-hover-color);
+}
+
+footer .footer-about {
+	line-height: 20px;
+	color:  var(--footer-text-color);
+	font-size: 13px;
+	font-weight: normal;
+    text-align: justify;
+	margin: 0;
+}
+
+footer .footer-about-text {
+    color: var(--footer-text-color);
+}
+
+footer .footer-social {
+    display: flex;
+}
+
+footer .social-icon {
+    align-content: center;
+    margin-right: 20px;
+}
+
+footer .image-hover {
+    position: absolute;
+    opacity: 0;
+}
+
+footer .image-hover:hover{
+    opacity: 1;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+    nav .navbar-nav > li {
+        padding: 0px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .card {
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .container .card .img-box {
+        max-width: 100%;
+    }
+
+    .container .card .img-box img {
+        justify-content: center;
+    }
+
+    .card p {
+        margin-top: 20px;
+    }
+}

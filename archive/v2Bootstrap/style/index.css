@@ -1,0 +1,309 @@
+@import url('./style.css');
+
+/* inicio carousel */
+.inicio-carousel .item {
+	height: 81vh;
+	position: relative;
+}
+
+.inicio-carousel .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.inicio-carousel .item .cover {
+	padding: 75px 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+}
+
+.inicio-carousel .item .cover .header-content {
+	position: relative;
+	padding: 56px;
+	overflow: hidden;
+}
+
+.inicio-carousel .item .cover .header-content .line {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border: 9px solid #fff;
+	-webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+	clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+
+.inicio-carousel .item .cover .header-content h2 {
+	font-weight: 300;
+	font-size: 3rem;
+	color: #fff;
+}
+
+.inicio-carousel .item .cover .header-content h1 {
+	font-size: 4rem;
+	font-weight: 600;
+	margin: 5px 0 20px;
+	word-spacing: 3px;
+	color: #fff;
+}
+
+.inicio-carousel .item .cover .header-content h4 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 36px;
+	color: #fff;
+}
+
+.inicio-carousel .owl-item.active h1,
+.inicio-carousel .owl-item.active h2 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-item.active h4,
+.inicio-carousel .owl-item.active button {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInUp;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-item.active .line {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInLeft;
+	animation-delay: 0.3s;
+}
+
+.inicio-carousel .owl-nav .owl-prev {
+	position: absolute;
+	left: 15px;
+	top: 43%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	display: block;
+	border-radius: 0;
+}
+
+.inicio-carousel .btn {
+	background-color: white;
+	border-radius: 0;
+	color: black;
+}
+
+.inicio-carousel .owl-nav .owl-prev span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.inicio-carousel .owl-nav .owl-prev:focus {
+	outline: 0;
+}
+
+.inicio-carousel .owl-nav .owl-prev:hover {
+	background: #000;
+}
+
+.inicio-carousel .owl-nav .owl-next {
+	position: absolute;
+	right: 15px;
+	top: 43%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	display: block;
+	border-radius: 0;
+}
+
+.inicio-carousel .owl-nav .owl-next span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.inicio-carousel .owl-nav .owl-next:focus {
+	outline: 0;
+}
+
+.inicio-carousel .owl-nav .owl-next:hover {
+	background: #000;
+}
+
+.inicio-carousel:hover .owl-prev {
+	left: 0px;
+	opacity: 1;
+}
+
+.inicio-carousel:hover .owl-next {
+	right: 0px;
+	opacity: 1;
+}
+
+/* lab images carousel */
+.lab-carousel {
+	margin-bottom: 1.5rem;
+}
+
+.lab-carousel .item {
+	opacity:0.4;
+	margin: 0 20px;
+	transform: scale(.8);
+	transition: .4s ease all;
+}
+
+.lab-carousel .active .item {
+	opacity:1;
+	transform:scale(1);
+} 
+
+/* equipe images carousel */
+.equip-carousel .item {
+	background: #fff;
+	border: 1px dashed #d7dad7;
+	border-radius: 25px;
+	text-align: center;
+	transform: scale(.8);
+	transition: .4s ease all;
+}
+
+.equip-carousel .active .item {
+	transform:scale(1);
+}
+
+.equip-carousel .item-image img {
+	padding: 1.25rem;
+}
+
+.equip-carousel .item-text {
+	padding: 1.25rem;
+}
+  
+.equip-carousel .item .item-title {
+	color: var(--footer-color) /*#9A5053*/;
+	display: block;
+	font-size: .85em;
+	font-weight: 600;
+	margin-bottom: 16px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+  
+.equip-carousel .item .item-info {
+	color: #000;
+	font-size: 1em;
+	margin: 0;
+	overflow: hidden;
+}
+
+.equip-carousel .item .item-info p {
+	margin-bottom: .5rem;
+	text-align: left;
+}
+  
+.owl-dots {
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+  
+.owl-dot {
+	background: rgba(127, 127, 127, 0.5);
+	border-radius: 50px;
+	display: inline-block;
+	height: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 10px;
+}
+  
+.owl-dot.active {
+	background: rgba(127, 127, 127, 1);
+}
+
+/* parallax banner */
+.parallax-banner {
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/citec-6-banner.jpg"); 
+	background-position: top center;
+	background-size: cover;
+	font-family: 'Arimo', sans-serif;
+	min-height: 250px;
+	position: relative;
+}
+
+.parallax-banner > h2 {
+	color: #fff;
+	left: 0;
+	letter-spacing: 10px;
+	margin-top: -20.5px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 50%;
+	width: 100%;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+	.inicio-carousel .item .cover .header-content h2 {
+		font-size: 1.25rem;
+	}
+	
+	.inicio-carousel .item .cover .header-content h1 {
+		font-size: 2rem;
+	}
+	
+	.inicio-carousel .item .cover .header-content h4 {
+		font-size: 1rem;
+	}
+
+	.parallax-inner {
+		min-height: 350px;
+		background-size: cover;
+	}
+
+	.parallax-banner > h2 {
+		margin-top: -40px;
+	}
+
+	footer {
+		padding: 10px;
+	}
+
+	footer > p {
+		width: 100%;
+		font-size: 24px;
+	}
+}
