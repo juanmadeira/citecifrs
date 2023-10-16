@@ -72,7 +72,7 @@
                             <p><span class="bubble"><i class="bi bi-geo-alt-fill"></i></span> Nos encontre aqui!
                                 <p>Rua Engenheiro Alfredo Huch, 475</p>
                                 <p>Bairro Centro</p>
-                                <p>CEP: 96201-460</p>
+                                <p>CEP 96201-460</p>
                             </div>
                     </div>
                 </div> 
