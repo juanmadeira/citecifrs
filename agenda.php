@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/cadastro.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -26,17 +26,21 @@
             <section class="py-5">
                 <div class="container">
                     <h1 class="fw-light mb-3">Agenda</h1>
-                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23189f42&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showDate=0&showPrint=0&showTz=1&showCalendars=0&hl=pt_BR&showTabs=0&src=Y182ZDFiM2EwNmEyYTY2YjJhZTQ0YjFkMGI2MDE3YjI2ODJhOGJmM2MyNjZjN2ZkZjc4M2YyN2JlOWJhYWIyZDQyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA" style="border-width:0" width="100%" height="720" frameborder="0" scrolling="no"></iframe>                </div>
-            </section>
-            <section class="py-5">
-                <div class="container">
-                    <form method="POST" action="./send-mail.php">
-                    <input type="email" name="email" class="form-control mail-field" required="required" placeholder="Insira seu e-mail..." />
-                    <input type="text" name="subject" class="form-control" required="required" placeholder="Insira o assunto..." />
-                    <textarea name="message" id="message" class="form-control" rows="8" required="required" placeholder="Escreva a mensagem..."></textarea>
-                    <button type="submit" class="btn btn-sucess rbtn">Enviar</button>
+                    <iframe class="mb-3" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23189f42&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showDate=0&showPrint=0&showTz=1&showCalendars=0&hl=pt_BR&showTabs=0&src=Y182ZDFiM2EwNmEyYTY2YjJhZTQ0YjFkMGI2MDE3YjI2ODJhOGJmM2MyNjZjN2ZkZjc4M2YyN2JlOWJhYWIyZDQyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA" style="border-width:0" width="100%" height="720" frameborder="0" scrolling="no"></iframe>                </div>
                 </div>
-            </section>
+                <div class="container">
+                    <h2 class="fw-light mb-3">Contato</h1>
+                    <p>Envie um e-mail para nossa equipe e reserve já o seu horário!</p>
+                    <form name="form" id="form" method="POST" action="./send-mail.php">
+                        <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
+                        <input type="email" name="email" id="email" class="form-control mail-field mb-3" placeholder="Insira seu e-mail..." required />
+                        <div id="fillmessage-subject">Preencha corretamente este campo obrigatório!</div>
+                        <input type="text" name="subject" id="subject" class="form-control mb-3" placeholder="Insira o assunto..." required />
+                        <div id="fillmessage-message">Preencha corretamente este campo obrigatório!</div>
+                        <textarea name="message" id="message" class="form-control mb-3" rows="6" placeholder="Escreva a mensagem..." required></textarea>
+                        <input type="submit" value="Enviar" onclick="return validateFormContato();" />
+                    </form>
+                </div>
         </main>
         <!-- footer -->
         <?php
