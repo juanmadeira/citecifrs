@@ -36,7 +36,7 @@
         </main>
         <!-- footer -->
         <?php
-            include('./view/nav.php');
+            include('./view/footer.php');
         ?>
     </body>
 </html>
