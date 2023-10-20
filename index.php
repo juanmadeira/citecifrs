@@ -88,7 +88,7 @@
                             <img src="./img/citec-5.jpg" alt="CITec" />
                         </div>
                     </div>
-                    <p class="php-error">Neste espaço estão as máquinas de fabricação digitais e tradicionais, computadores para desenvolvimento e espaço para armazenamento dos projetos. Idealizado em 2019 como um Espaço Maker para atividades de ensino interdisciplinares, propiciando aos discentes atuarem como protagonistas na idealização, operação e validação de experimentos, tem-se em 2022 a consolidação do projeto do Habitat de Inovação Tecnológica. No momento, o CITec está aberto e disponível para todos os alunos e professores dos cursos integrados, subsequentes e superiores do IFRS. Contamos hoje com cinco impressoras 3D, máquina de corte a laser, CNC e eletrônicos como Arduíno e diversos tipos de sensores.</p>
+                    <p>Neste espaço estão as máquinas de fabricação digitais e tradicionais, computadores para desenvolvimento e espaço para armazenamento dos projetos. Idealizado em 2019 como um Espaço Maker para atividades de ensino interdisciplinares, propiciando aos discentes atuarem como protagonistas na idealização, operação e validação de experimentos, tem-se em 2022 a consolidação do projeto do Habitat de Inovação Tecnológica. No momento, o CITec está aberto e disponível para todos os alunos e professores dos cursos integrados, subsequentes e superiores do IFRS. Contamos hoje com cinco impressoras 3D, máquina de corte a laser, CNC e eletrônicos como Arduíno e diversos tipos de sensores.</p>
                 </div>
                 <div class="container">
                     <h2 class="fw-light">Equipamentos</h1>
