@@ -1,13 +1,14 @@
-<?php  
-    $sname = "localhost";
-    $uname = "root";
-    $password = "";
-    $db_name = "citecifrs";
-    
-    $conn = mysqli_connect($sname, $uname, $password, $db_name);
+<?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $dbname = "citecifrs";
+    $port = 3306;
 
-    if (!$conn) {
-        echo "conexão falhou!";
-        exit();
+    try{
+        $conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
+        //echo "conexão com banco de dados estabelecida com sucesso!";
+
+    } catch(PDOException $err){
+        echo "conexão falhou! " . $err->getMessage();
     }
-?>
