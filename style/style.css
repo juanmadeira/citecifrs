@@ -63,6 +63,12 @@ a {
     color: #000;
 }
 
+.php-error {
+	color: #ff0000;
+    font-size: 0.7em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /* hover effect */
 .hover-u {
     position: relative;
