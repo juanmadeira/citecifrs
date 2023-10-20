@@ -13,7 +13,7 @@
 
         if ($error === 0) {
             if ($img_size > 10000000) {
-                $em = "Desculpe! Sua imagem é muito grande.";
+                $em = "A imagem enviada é muito grande.";
                 header ("Location: ../cadastro.php?error=$em");
             } else {
 
@@ -40,7 +40,7 @@
                 }
             }
         } else {
-            $em = "Um erro inesperado ocorreu!";
+            $em = "É necessário enviar uma imagem!";
             header ("Location: ../cadastro.php?error=$em");
         }
     } else {
