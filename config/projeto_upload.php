@@ -12,7 +12,7 @@
         $error = $_FILES['imagem']['error'];
 
         if ($error === 0) {
-            if ($img_size > 1) {
+            if ($img_size > 10000000) {
                 $em = "Desculpe! Sua imagem é muito grande.";
                 header ("Location: ../cadastro.php?error=$em");
             } else {
