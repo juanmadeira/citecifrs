@@ -88,7 +88,7 @@
                             <img src="./img/citec-5.jpg" alt="CITec" />
                         </div>
                     </div>
-                    <p>Neste espaço estão as máquinas de fabricação digitais e tradicionais, computadores para desenvolvimento e espaço para armazenamento dos projetos. Idealizado em 2019 como um Espaço Maker para atividades de ensino interdisciplinares, propiciando aos discentes atuarem como protagonistas na idealização, operação e validação de experimentos, tem-se em 2022 a consolidação do projeto do Habitat de Inovação Tecnológica. No momento, o CITec está aberto e disponível para todos os alunos e professores dos cursos integrados, subsequentes e superiores do IFRS. Contamos hoje com cinco impressoras 3D, máquina de corte a laser, CNC e eletrônicos como Arduíno e diversos tipos de sensores.</p>
+                    <p class="php-error">Neste espaço estão as máquinas de fabricação digitais e tradicionais, computadores para desenvolvimento e espaço para armazenamento dos projetos. Idealizado em 2019 como um Espaço Maker para atividades de ensino interdisciplinares, propiciando aos discentes atuarem como protagonistas na idealização, operação e validação de experimentos, tem-se em 2022 a consolidação do projeto do Habitat de Inovação Tecnológica. No momento, o CITec está aberto e disponível para todos os alunos e professores dos cursos integrados, subsequentes e superiores do IFRS. Contamos hoje com cinco impressoras 3D, máquina de corte a laser, CNC e eletrônicos como Arduíno e diversos tipos de sensores.</p>
                 </div>
                 <div class="container">
                     <h2 class="fw-light">Equipamentos</h1>
@@ -162,14 +162,14 @@
                 <div class="container">
                     <h2 class="fw-light">Cultura Maker</h2>
                     <div class="card culturamaker">
-                        <div class="img-box"><a href="./culturamaker.php"><img src="./img/logo-cultura.png" class="img-fluid p-3" width="250vw" /></a></div>
+                        <div class="img-box"><img src="./img/logo-cultura.png" class="img-fluid p-3" /></div>
                         <p>Baseando-se na ideia de que as pessoas devem ser capazes da fabricar, construir, reparar e alterar objetos dos mais variados tipos e com diversas funções, o Cultura Maker é um projeto ensino aberto para a comunidade acadêmica do IFRS Campus Rio Grande. É uma ótima oportunidade para desenvolver a criatividade através dos minicursos de modelagem, impressão 3D, corte à laser e Arduíno. As oficinas são abertas pra toda a comunidade acadêmica do IFRS - Campus Rio Grande, alunos do integrado, subsequente, superior e também para os professores do campus.</p>
                     </div>
                 </div>
                 <div class="container">
                     <h2 class="fw-light">TecnoMaker 4.0</h2>
                     <div class="card tecnomaker">
-                        <div class="img-box"><a href="./tecnomaker.php"><img src="./img/logo-tecnomaker.png" class="img-fluid p-3" width="250vw" /></a></div>
+                        <div class="img-box"><img src="./img/logo-tecnomaker.png" class="img-fluid p-3" /></div>
                         <p>O TecnoMaker 4.0 é um projeto de extensão, ou seja, voltado para as pessoas que não estudam ou trabalham no IFRS - Campus Rio Grande. É focado na iniciação tecnológica nas escolas públicas de ensino fundamental de Rio Grande. Dentre os temas a serem abordados nas oficinas estão: pensamento computacional, robótica e Cultura Maker.</p>
                     </div>
                 </div>
