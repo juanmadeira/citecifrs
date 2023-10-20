@@ -29,28 +29,23 @@
                     <?php
                         $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
                         if (!empty($dados['submit'])) {
-                            // var_dump($dados);
+                            include "db_conn.php";
+                            var_dump($dados);
 
                             // validar o campo individual
                             if (empty($dados['nome'])) {
-                                echo "<p style='color: #f00;'>Erro: Necessário preencher o campo nome!</p>";
+                                echo "<p style='color: #f00;'>É necessário preencher o campo nome!</p>";
                             } elseif (empty($dados['email'])) {
-                                echo "<p style='color: #f00;'>Erro: Necessário preencher o campo e-mail!</p>";
-                            } elseif (empty($dados['assunto'])) {
-                                echo "<p style='color: #f00;'>Erro: Necessário preencher o campo assunto!</p>";
-                            } elseif (empty($dados['conteudo'])) {
-                                echo "<p style='color: #f00;'>Erro: Necessário preencher o campo conteúdo!</p>";
+                                echo "<p style='color: #f00;'>É necessário preencher o campo e-mail!</p>";
                             } else {
-                                $query_contato = "INSERT INTO contatos (nome, email, assunto, conteudo) VALUES (:nome, :email, :assunto, :conteudo)";
-                                $add_contato = $conn->prepare($query_contato);
-                                $add_contato->bindParam(':nome', $dados['nome'], PDO::PARAM_STR);
-                                $add_contato->bindParam(':email', $dados['email'], PDO::PARAM_STR);
-                                $add_contato->bindParam(':assunto', $dados['assunto'], PDO::PARAM_STR);
-                                $add_contato->bindParam(':conteudo', $dados['conteudo'], PDO::PARAM_STR);
+                                $query_projeto = "INSERT INTO projetos (nome, email) VALUES (:nome, :email)";
+                                $add_projeto = $conn->prepare($query_projeto);
+                                $add_projeto->bindParam(':nome', $dados['nome'], PDO::PARAM_STR);
+                                $add_projeto->bindParam(':email', $dados['email'], PDO::PARAM_STR);
 
-                                $add_contato->execute();
+                                $add_projeto->execute();
 
-                                if ($add_contato->rowCount()) {
+                                if ($add_projeto->rowCount()) {
                                     unset($dados);
                                     echo "<p style='color: green;'>Mensagem enviada com sucesso!</p>";
                                 } else {
@@ -73,7 +68,7 @@
                             ?>
                             <label class="mb-2" for="name">Nome completo:</label>
                             <div id="fillmessage-name">Preencha corretamente este campo obrigatório!</div>
-                            <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." required />
+                            <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." value="<?php echo $nome; ?>" />
                             <?php
                                 $email = "";
                                 if(isset($dados['email'])){ 
@@ -82,7 +77,7 @@
                             ?>
                             <label class="mb-2" for="email">Endereço de e-mail:</label>
                             <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
-                            <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." required />    
+                            <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." value="<?php echo $email; ?>" />
                         </fieldset>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">2</span> Informações do projeto</legend>
@@ -94,8 +89,8 @@
                             ?>
                             <label class="mb-2" for="activity">Atividade:</label>
                             <span class="radio-options">
-                                <input class="mb-3" type="radio" name="atividade" id="individual" value="individual" required /> Individual
-                                <input class="mb-3" type="radio" name="atividade" id="grupo" value="grupo" /> Grupo
+                                <input class="mb-3" type="radio" name="atividade" id="individual" value="<?php echo $atividade; ?>" /> Individual
+                                <input class="mb-3" type="radio" name="atividade" id="grupo" value="<?php echo $atividade; ?>" /> Grupo
                             </span>
                             <span class="datas">
                                 <?php
@@ -105,7 +100,7 @@
                                     }
                                 ?>
                                 <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
-                                <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
+                                <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" value="<?php echo $dataInicio; ?>" />
                                 <?php
                                     $dataTermino = "";
                                     if(isset($dados['dataTermino'])){ 
@@ -113,7 +108,7 @@
                                     }
                                 ?>
                                 <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
-                                <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
+                                <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" value="<?php echo $dataTermino; ?>" />
                             </span>
                             <?php
                                 $area = "";
@@ -139,7 +134,7 @@
                                 <option value="acessibilidade">Acessibilidade</option>
                                 <option value="empreendimento">Empreendimento</option>
                             </select>
-                            <?php
+                            <!-- <?php
                                 $imagem = "";
                                 if(isset($dados['imagem'])){ 
                                     $imagem = $dados['imagem']; 
@@ -148,8 +143,7 @@
                             <p>Envie uma imagem do seu projeto:</p>
                             <label class="mb-3 file-button" for="image">
                                 <input type="file" name="imagem" id="image" accept="image/png, image/jpeg" />
-                            
-                            </label>
+                            </label> -->
                             <?php
                                 $equipamentos = "";
                                 if(isset($dados['equipamentos'])){ 
@@ -158,7 +152,7 @@
                             ?>
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
                             <div id="fillmessage-equip">Preencha corretamente este campo obrigatório!</div>
-                            <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3" required></textarea>
+                            <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3"><?php echo $equipamentos; ?></textarea>
                             <?php
                                 $descricao = "";
                                 if(isset($dados['descricao'])){ 
@@ -166,7 +160,7 @@
                                 }
                             ?>
                             <label class="mb-2" for="about">Descrição:</label>
-                            <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+                            <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"><?php echo $descricao; ?></textarea>
                         </fieldset>
                         <input type="submit" name="submit" value="Enviar" />
                     </form>
