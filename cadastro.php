@@ -27,10 +27,10 @@
                 <div class="container">
                     <h1 class="fw-light text-center mb-3">Cadastro de Projeto</h1><!-- https://api.sheetmonkey.io/form/mKiHbmvLafPkYe9G2BcpXU --->
                     <?php if (isset($_GET['error'])): ?>
-                    <p class="php-error"><?php echo $_GET['error']; ?></p>
-                    <?php endif ?>
-                    <form class="m-auto py-3" name="form" id="form" enctype="multipart/form-data" method="POST" action="./config/projeto_upload.php">
-                        <fieldset>
+                        <?php endif ?>
+                        <form class="m-auto py-3" name="form" id="form" enctype="multipart/form-data" method="POST" action="./config/projeto_upload.php">
+                            <fieldset>
+                            <p class="php-error"><?php echo $_GET['error']; ?></p>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
                             <label class="mb-2" for="name">Nome completo:</label>
                             <div id="fillmessage-name">Preencha corretamente este campo obrigatório!</div>
@@ -48,9 +48,9 @@
                             </span>
                             <span class="datas">
                                 <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
-                                <input class="mb-3" type="date" name="data-inicio" id="dataCampo1" />
+                                <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
                                 <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
-                                <input class="mb-3" type="date" name="data-termino" id="dataCampo2" />
+                                <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
                             </span>
                             <label class="mb-2" for="area">Área de atuação:</label>
                             <select class="mb-3" id="area" name="area">
