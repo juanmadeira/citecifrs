@@ -25,8 +25,11 @@
         <main>
             <section class="py-5">
                 <div class="container">
-                    <h1 class="fw-light text-center mb-3">Cadastro de Projeto</h1>
-                    <form class="m-auto py-3" name="form" id="form" method="POST" action="https://api.sheetmonkey.io/form/mKiHbmvLafPkYe9G2BcpXU">
+                    <h1 class="fw-light text-center mb-3">Cadastro de Projeto</h1><!-- https://api.sheetmonkey.io/form/mKiHbmvLafPkYe9G2BcpXU --->
+                    <?php if (isset($_GET['error'])): ?>
+                    <p class="php-error"><?php echo $_GET['error']; ?></p>
+                    <?php endif ?>
+                    <form class="m-auto py-3" name="form" id="form" enctype="multipart/form-data" method="POST" action="./config/projeto_upload.php">
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
                             <label class="mb-2" for="name">Nome completo:</label>
@@ -77,7 +80,7 @@
                             <label class="mb-2" for="about">Descrição:</label>
                             <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
                         </fieldset>
-                        <input type="submit" value="Enviar" onclick="return validateFormCadastro();" />
+                        <input type="submit" name="submit" value="Enviar" onclick="return validateFormCadastro();" />
                     </form>
                 </div>
             </section>
