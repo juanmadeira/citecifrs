@@ -140,12 +140,6 @@ form input[type="button"]:hover {
     font-family: 'Ubuntu', sans-serif;
 }
 
-#php-error {
-	color: red;
-    font-size: 0.7em;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .form-sucess p {
 	font-size: 1.2rem
 }
