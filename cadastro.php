@@ -28,7 +28,7 @@
                     <h1 class="fw-light text-center mb-3">Cadastro de Projeto</h1><!-- https://api.sheetmonkey.io/form/mKiHbmvLafPkYe9G2BcpXU --->
                     <form class="m-auto py-3" name="form" id="form" enctype="multipart/form-data" method="POST" action="./config/projeto_upload.php">
                         <?php if (isset($_GET['error'])): ?>
-                        <p class="php-error"><?php echo $_GET['error']; ?></p>
+                        <p class="error"><?php echo $_GET['error']; ?></p>
                         <?php endif ?>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
