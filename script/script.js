@@ -94,7 +94,7 @@ $('.equip-carousel').owlCarousel({
     }
 });
 
-/* validação do formulário  */
+/* validação do formulário
 let camposCadastro = ["name", "email", "equip"];
 function validateFormCadastro(){
     for (let i = 0; i < camposCadastro.length; i++) {
@@ -108,7 +108,6 @@ function validateFormCadastro(){
             qs(`#${camposCadastro[i]}`).style.border = "1px solid red";
             document.forms["form"][`${camposCadastro[i]}`].focus();
         }
-        
     }
 }
 
@@ -125,6 +124,5 @@ function validateFormContato(){
             qs(`#${camposContato[i]}`).style.border = "1px solid red";
             document.forms["form"][`${camposContato[i]}`].focus();
         }
-        
     }
-}
+}*/
