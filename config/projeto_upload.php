@@ -6,6 +6,15 @@
         print_r($_FILES['imagem']);
         echo "</pre>";
 
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $atividade = $_POST['atividade'];
+        $dataInicio = $_POST['dataInicio'];
+        $dataTermino = $_POST['dataTermino'];
+        $area = $_POST['area'];
+        $equipamentos = $_POST['equipamentos'];
+        $descricao = $_POST['descricao'];
+
         $img_name = $_FILES['imagem']['name'];
         $img_size = $_FILES['imagem']['size'];
         $tmp_name = $_FILES['imagem']['tmp_name'];
@@ -13,7 +22,7 @@
 
         if ($error === 0) {
             if ($img_size > 10000000) {
-                $em = "A imagem enviada é muito grande.";
+                $em = "A imagem enviada é muito grande ou o tipo de arquivo é inválido.";
                 header ("Location: ../cadastro.php?error=$em");
             } else {
 
@@ -30,8 +39,8 @@
                     $img_upload_path = '../uploads/'.$new_img_name;
                     move_uploaded_file($tmp_name, $img_upload_path);
 
-                    $sql = "INSERT INTO projetos(image_url) 
-                            VALUES('$new_img_name')";
+                    $sql = "INSERT INTO projetos(nome, email, atividade, dataInicio, dataTermino, area, image_url, equipamentos, descricao)
+                            VALUES('$nome', '$email', '$atividade', '$dataInicio', '$dataTermino', '$area', '$new_img_name', '$equipamentos', '$descricao')";
                     mysqli_query($conn, $sql);
                     header ("Location: ../cadastro-sucess.php");
                 } else {
