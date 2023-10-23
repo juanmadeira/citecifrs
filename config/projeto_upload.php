@@ -1,28 +1,24 @@
 <?php
-    if (isset($_POST['submit']) && isset($_FILES['imagem'])) {
-        include "db_conn.php";
+    include "db_conn.php";
 
-        echo "<pre>";
-        print_r($_FILES['imagem']);
-        echo "</pre>";
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $atividade = $_POST['atividade'];
+    $dataInicio = $_POST['dataInicio'];
+    $dataTermino = $_POST['dataTermino'];
+    $area = $_POST['area'];
+    $equipamentos = $_POST['equipamentos'];
+    $descricao = $_POST['descricao'];
 
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $atividade = $_POST['atividade'];
-        $dataInicio = $_POST['dataInicio'];
-        $dataTermino = $_POST['dataTermino'];
-        $area = $_POST['area'];
-        $equipamentos = $_POST['equipamentos'];
-        $descricao = $_POST['descricao'];
+    $img_name = $_FILES['imagem']['name'];
+    $img_size = $_FILES['imagem']['size'];
+    $tmp_name = $_FILES['imagem']['tmp_name'];
+    $img_error = $_FILES['imagem']['error'];
 
-        $img_name = $_FILES['imagem']['name'];
-        $img_size = $_FILES['imagem']['size'];
-        $tmp_name = $_FILES['imagem']['tmp_name'];
-        $error = $_FILES['imagem']['error'];
 
-        if ($error === 0) {
+        if ($img_error === 0) {
             if ($img_size > 10000000) {
-                $em = "A imagem enviada é muito grande ou o tipo de arquivo é inválido.";
+                $em = "O arquivo enviado é muito grande.";
                 header ("Location: ../cadastro.php?error=$em");
             } else {
 
@@ -44,15 +40,26 @@
                     mysqli_query($conn, $sql);
                     header ("Location: ../cadastro-sucess.php");
                 } else {
-                    $em = "Formato de imagem inválido.";
+                    $em = "O formato de imagem inválido.";
                     header ("Location: ../cadastro.php?error=$em");
                 }
             }
         } else {
-            $em = "É necessário enviar uma imagem!";
+            $em = "É necessário enviar uma imagem.";
             header ("Location: ../cadastro.php?error=$em");
         }
-    } else {
-        header ("Location: ../cadastro.php");
-    }
+
+        if (empty($nome)) {
+            $error = "O campo nome é necessário";
+            header ("Location: ../cadastro.php?error=$error");
+    
+        } else {
+            $nome = test_input($_POST["name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+            $error = "Only letters and white space allowed";
+            header ("Location: ../cadastro.php?error=$error");
+            }
+        }
+    
 ?>
