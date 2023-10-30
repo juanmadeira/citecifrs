@@ -93,3 +93,36 @@ $('.equip-carousel').owlCarousel({
     }
     }
 });
+
+/* validação do formulário
+let camposCadastro = ["name", "email", "equip"];
+function validateFormCadastro(){
+    for (let i = 0; i < camposCadastro.length; i++) {
+        let text = document.forms["form"][`${camposCadastro[i]}`].value;
+        if (text !== ""){
+            qs(`#fillmessage-${camposCadastro[i]}`).style.display = "none";
+            qs(`#${camposCadastro[i]}`).style.border = "none";
+        }
+        else if (text == "") {
+            qs(`#fillmessage-${camposCadastro[i]}`).style.display = "flex";
+            qs(`#${camposCadastro[i]}`).style.border = "1px solid red";
+            document.forms["form"][`${camposCadastro[i]}`].focus();
+        }
+    }
+}
+
+let camposContato = ["email", "subject", "message"];
+function validateFormContato(){
+    for (let i = 0; i < camposContato.length; i++) {
+        let text = document.forms["form"][`${camposContato[i]}`].value;
+        if (text !== ""){
+            qs(`#fillmessage-${camposContato[i]}`).style.display = "none";
+            qs(`#${camposContato[i]}`).style.border = "none";
+        }
+        else if (text == "") {
+            qs(`#fillmessage-${camposContato[i]}`).style.display = "flex";
+            qs(`#${camposContato[i]}`).style.border = "1px solid red";
+            document.forms["form"][`${camposContato[i]}`].focus();
+        }
+    }
+}*/
