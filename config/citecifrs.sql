@@ -3,13 +3,13 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/10/2023 às 14:40
+-- Tempo de geração: 30/10/2023 às 13:57
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "-03:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -45,7 +45,7 @@ CREATE TABLE `projetos` (
 --
 
 INSERT INTO `projetos` (`id`, `nome`, `email`, `atividade`, `dataInicio`, `dataTermino`, `area`, `imagem`, `equipamentos`, `descricao`) VALUES
-(1, 'Nome Sobrenome', 'email@email.com', 'individual', '2023-01-01', '2023-12-31', 'arte_criatividade', 'imagem.png', 'Equipamentos', 'Descrição');
+(1, 'Nome Sobrenome', 'nome@email.com', 'individual', '2023-01-01', '2023-12-31', 'arte_criatividade', 'Nome Sobrenome-2023-10-30-09.57.41.png', 'Equipamentos', 'Descrição');
 
 --
 -- Índices para tabelas despejadas
