@@ -38,7 +38,7 @@
                         <input type="text" name="subject" id="subject" class="form-control mb-3" placeholder="Insira o assunto..." required />
                         <div id="fillmessage-message">Preencha corretamente este campo obrigatório!</div>
                         <textarea name="message" id="message" class="form-control mb-3" rows="6" placeholder="Escreva a mensagem..." required></textarea>
-                        <input type="submit" value="Enviar" onclick="return validateFormContato();" />
+                        <input type="submit" value="Enviar" />
                     </form>
                 </div>
         </main>
