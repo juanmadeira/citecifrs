@@ -35,7 +35,7 @@ CREATE TABLE `projetos` (
   `dataInicio` date NOT NULL,
   `dataTermino` date NOT NULL,
   `area` text NOT NULL,
-  `image_url` text NOT NULL,
+  `imagem` text NOT NULL,
   `equipamentos` text NOT NULL,
   `descricao` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
@@ -44,8 +44,8 @@ CREATE TABLE `projetos` (
 -- Despejando dados para a tabela `projetos`
 --
 
-INSERT INTO `projetos` (`id`, `nome`, `email`, `atividade`, `dataInicio`, `dataTermino`, `area`, `image_url`, `equipamentos`, `descricao`) VALUES
-(1, 'teste', 'teste@email.com', 'teste', '2023-10-22', '2023-10-23', 'teste', 'teste.png', 'teste', 'teste');
+INSERT INTO `projetos` (`id`, `nome`, `email`, `atividade`, `dataInicio`, `dataTermino`, `area`, `imagem`, `equipamentos`, `descricao`) VALUES
+(1, 'Nome Sobrenome', 'email@email.com', 'individual', '2023-01-01', '2023-12-31', 'arte_criatividade', 'imagem.png', 'Equipamentos', 'Descrição');
 
 --
 -- Índices para tabelas despejadas

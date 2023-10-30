@@ -1,7 +1,7 @@
 <?php  
     $sname = "localhost";
     $uname = "root";
-    $password = "root";
+    $password = "";
     $db_name = "citecifrs";
 
     $conn = mysqli_connect($sname, $uname, $password, $db_name);
