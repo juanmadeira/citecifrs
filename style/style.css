@@ -65,14 +65,17 @@ a {
 
 .error {
 	color: #f00;
+    border: 1px solid #f00;
+    border-radius: 10px;
     font-size: 0.8em;
     font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
 }
 
 /* hover effect */
 .hover-u {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
   
 .hover-u::after {
