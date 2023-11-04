@@ -27,28 +27,28 @@
                 <div class="container">
                     <h1 class="fw-light mb-3">Galeria de Projetos</h1>
                     <div class="row">
-                        <div class="p-3 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid" alt="Projeto 1" />
+                        <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
+                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 1" />
                             <h5 class="gallery-title">Projeto 1</h5>
                             <p class="gallery-text">Descrição do Projeto 1.</p>
                         </div>
-                        <div class="p-3 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid" alt="Projeto 2" />
+                        <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
+                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 2" />
                             <h5 class="gallery-title">Projeto 2</h5>
                             <p class="gallery-text">Descrição do Projeto 2.</p>
                         </div>
-                        <div class="p-3 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid" alt="Projeto 3" />
+                        <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
+                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
                             <h5 class="gallery-title">Projeto 3</h5>
                             <p class="gallery-text">Descrição do Projeto 3.</p>
                         </div>    
-                        <div class="p-3 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid" alt="Projeto 3" />
+                        <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
+                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
                             <h5 class="gallery-title">Projeto 4</h5>
                             <p class="gallery-text">Descrição do Projeto 4.</p>
                         </div>
-                        <div class="p-3 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid" alt="Projeto 3" />
+                        <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
+                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
                             <h5 class="gallery-title">Projeto 5</h5>
                             <p class="gallery-text">Descrição do Projeto 5.</p>
                         </div>
