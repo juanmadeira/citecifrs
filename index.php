@@ -39,7 +39,7 @@
                     </div>
                 </div>                    
                 <div class="item">
-                    <img src="./img/citec-1.jpg" alt="CITec" />
+                    <img src="./img/tecnomaker-banner.png" alt="CITec" />
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
