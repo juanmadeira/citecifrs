@@ -38,8 +38,9 @@
             if (in_array($img_ex_lc, $allowed_exs)) {
                 date_default_timezone_set("Brazil/East");
                 $ext = strtolower(substr($_FILES['imagem']['name'],-4));
+                $novo_nome = preg_replace('/[ -]+/' , '-' , $_POST['nome']);
 
-                $new_img_name = $_POST['nome'] . "-" . date("Y-m-d-H.i.s") . $ext;
+                $new_img_name = $novo_nome . "-" . date("Y-m-d-H.i.s") . $ext;
                 $img_upload_path = '../uploads/'.$new_img_name;
                 move_uploaded_file($tmp_name, $img_upload_path);
             } else {
