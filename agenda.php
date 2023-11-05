@@ -31,13 +31,13 @@
                 <div class="container">
                     <h2 class="fw-light mb-3">Contato</h1>
                     <p>Envie um e-mail para nossa equipe e reserve já o seu horário!</p>
-                    <form name="form" id="form" method="POST" action="./config/send-mail.php">
-                        <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
+                    <form name="form" id="form" method="POST" action="./config/send_mail.php">
                         <input type="email" name="email" id="email" class="form-control mail-field mb-3" placeholder="Insira seu e-mail..." required />
-                        <div id="fillmessage-subject">Preencha corretamente este campo obrigatório!</div>
+                        
                         <input type="text" name="subject" id="subject" class="form-control mb-3" placeholder="Insira o assunto..." required />
-                        <div id="fillmessage-message">Preencha corretamente este campo obrigatório!</div>
-                        <textarea name="message" id="message" class="form-control mb-3" rows="6" placeholder="Escreva a mensagem..." required></textarea>
+                        
+                        <textarea name="mensagem" id="mensagem" class="form-control mb-3" rows="6" placeholder="Escreva a mensagem..." required></textarea>
+                        
                         <input type="submit" value="Enviar" />
                     </form>
                 </div>
