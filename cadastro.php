@@ -33,11 +33,9 @@
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
                             <label class="mb-2" for="name">Nome completo:</label>
-                            <div id="fillmessage-name">Preencha corretamente este campo obrigatório!</div>
                             <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." />
                             
                             <label class="mb-2" for="email">Endereço de e-mail:</label>
-                            <div id="fillmessage-email">Preencha corretamente este campo obrigatório!</div>
                             <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." />
                         </fieldset>
                         <fieldset>
@@ -80,7 +78,6 @@
                             </label> 
 
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
-                            <div id="fillmessage-equip">Preencha corretamente este campo obrigatório!</div>
                             <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3"></textarea>
 
                             <label class="mb-2" for="about">Descrição:</label>
