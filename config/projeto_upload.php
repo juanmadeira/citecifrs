@@ -25,6 +25,7 @@
     $tmp_name = $_FILES['imagem']['tmp_name'];
     $img_error = $_FILES['imagem']['error'];
     if ($img_error === 0) {
+        // verifica se o tamanho da imagem é permitido
         if ($img_size > 10000000) {
             $error = "O arquivo enviado é muito grande.";
             header ("Location: ../cadastro.php?error=$error");
@@ -33,9 +34,11 @@
             $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
             $img_ex_lc = strtolower($img_ex);
 
+            // define extensões permitidas para a imagem
             $allowed_exs = array("jpg", "jpeg", "png"); 
 
             if (in_array($img_ex_lc, $allowed_exs)) {
+                // altera o nome da imagem
                 date_default_timezone_set("Brazil/East");
                 $ext = strtolower(substr($_FILES['imagem']['name'],-4));
                 $novo_nome = preg_replace('/[ -]+/' , '-' , $_POST['nome']);

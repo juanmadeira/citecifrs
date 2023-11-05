@@ -1,18 +1,19 @@
 <?php
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    $body .= "E-mail: " . $email . "\n";
-    $body .= "Subject: " . $subject . "\n";
-    $body .= "Message: " . $message . "\n";
-
-    mail("teste@email.com","E-mail",$body);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // coleta os dados do formulário
+    $email = $_POST["email"];
+    $mensagem = $_POST["mensagem"];
+    
+    // configurações para o e-mail
+    $destinatario = "juanpmad@outlook.com"; // e-mail do destinatário
+    $assunto = "Nova mensagem do formulário de contato";
+    $headers = "From: $email"; // e-mail do remetente
+    
+    // envia o e-mail
+    if (mail($destinatario, $assunto, $mensagem, $headers)) {
+        echo "E-mail enviado com sucesso!";
+    } else {
+        echo "Erro ao enviar o e-mail.";
+    }
+}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <script>alert("Seu e-mail foi enviado. Obrigado!");</script>
-        <meta HTTP-EQUIV="REFRESH" content="0; url=./agenda.php">
-    </head>
-</html>

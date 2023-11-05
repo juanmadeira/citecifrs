@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/10/2023 às 13:57
+-- Tempo de geração: 05/11/2023 às 23:10
 -- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Versão do PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,13 +41,6 @@ CREATE TABLE `projetos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Despejando dados para a tabela `projetos`
---
-
-INSERT INTO `projetos` (`id`, `nome`, `email`, `atividade`, `dataInicio`, `dataTermino`, `area`, `imagem`, `equipamentos`, `descricao`) VALUES
-(1, 'Nome Sobrenome', 'nome@email.com', 'individual', '2023-01-01', '2023-12-31', 'arte_criatividade', 'Nome Sobrenome-2023-10-30-09.57.41.png', 'Equipamentos', 'Descrição');
-
---
 -- Índices para tabelas despejadas
 --
 
@@ -65,7 +58,7 @@ ALTER TABLE `projetos`
 -- AUTO_INCREMENT de tabela `projetos`
 --
 ALTER TABLE `projetos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
