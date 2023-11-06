@@ -23,8 +23,9 @@
         ?>
         <!-- conteúdo principal -->
         <main>
-            <section class="py-5">
+            <section class="py-3">
                 <div class="container sobre">
+                    <div class="pb-2"><span class="page-history"><a href="./index.php">Início</a> / </span><span class="page-history-current">Sobre</span></div>
                     <h1 class="fw-light">Sobre</h1>
                     <p>Conheça a nossa equipe CITec</p>
                     <div class="container equipe">
