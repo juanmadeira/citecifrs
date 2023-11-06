@@ -1,9 +1,4 @@
-/* querySelector const */
-const qs = (val) => {
-    return document.querySelector(val);
-}
-
-/* owlCarousel */
+// carrossel da página principal
 $('.inicio-carousel').owlCarousel({
     animateOut:'animate__slideOutUp',
     autoplayTimeout:6000,
@@ -27,6 +22,7 @@ $('.inicio-carousel').owlCarousel({
     }
 });
 
+// carrossel com as imagens do laboratório
 $('.lab-carousel').owlCarousel({
     autoplay:true,
     autoplayTimeout:5000,
@@ -62,15 +58,16 @@ $('.lab-carousel').owlCarousel({
         },
         1600:{
             items:1,
-            stagePadding: 350
+            stagePadding: 300
         },
         1800:{
             items:1,
-            stagePadding: 400
+            stagePadding: 300
         }
     }
 });
 
+// carrossel com os equipamentos
 $('.equip-carousel').owlCarousel({
     dots: true,
     loop: true,
@@ -94,35 +91,26 @@ $('.equip-carousel').owlCarousel({
     }
 });
 
-/* validação do formulário
-let camposCadastro = ["name", "email", "equip"];
-function validateFormCadastro(){
-    for (let i = 0; i < camposCadastro.length; i++) {
-        let text = document.forms["form"][`${camposCadastro[i]}`].value;
-        if (text !== ""){
-            qs(`#fillmessage-${camposCadastro[i]}`).style.display = "none";
-            qs(`#${camposCadastro[i]}`).style.border = "none";
-        }
-        else if (text == "") {
-            qs(`#fillmessage-${camposCadastro[i]}`).style.display = "flex";
-            qs(`#${camposCadastro[i]}`).style.border = "1px solid red";
-            document.forms["form"][`${camposCadastro[i]}`].focus();
-        }
-    }
-}
-
-let camposContato = ["email", "subject", "message"];
-function validateFormContato(){
-    for (let i = 0; i < camposContato.length; i++) {
-        let text = document.forms["form"][`${camposContato[i]}`].value;
-        if (text !== ""){
-            qs(`#fillmessage-${camposContato[i]}`).style.display = "none";
-            qs(`#${camposContato[i]}`).style.border = "none";
-        }
-        else if (text == "") {
-            qs(`#fillmessage-${camposContato[i]}`).style.display = "flex";
-            qs(`#${camposContato[i]}`).style.border = "1px solid red";
-            document.forms["form"][`${camposContato[i]}`].focus();
+// imagem estática na página de projetos
+$('.projetos-carousel').owlCarousel({
+    animateOut:'animate__slideOutUp',
+    autoplayTimeout:6000,
+    autoplay:true,
+    dots:false,
+    loop:true,
+    margin:0,
+    mouseDrag:false,
+    nav:true,
+    responsiveClass: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     }
-}*/
+});
