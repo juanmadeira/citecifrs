@@ -23,8 +23,9 @@
         ?>
         <!-- conteúdo principal -->
         <main>
-            <section class="py-5">
+            <section class="py-3">
                 <div class="container">
+                    <div class="pb-2"><span class="page-history"><a href="./index.php">Início</a> / </span><span class="page-history-current">Cadastro de Projeto</span></div>
                     <h1 class="fw-light text-center mb-3">Cadastro de Projeto</h1><!-- https://api.sheetmonkey.io/form/mKiHbmvLafPkYe9G2BcpXU --->
                     <form class="m-auto py-3" name="form" id="form" enctype="multipart/form-data" method="POST" action="./config/projeto_upload.php">
                         <?php if (isset($_GET['error'])): ?>
