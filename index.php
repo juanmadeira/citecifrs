@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./img/icon.png" />
+        <link rel="icon" href="./img/citec-icon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -25,7 +25,21 @@
         <main>
             <div class="owl-carousel owl-theme inicio-carousel">
                 <div class="item">
-                    <img src="./img/citec-3.jpg" alt="CITec" />
+                    <img src="./img/citec-2.jpg" alt="CITec" />
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>Desenvolva o seu projeto</h2>
+                                <h1>OPEN DAY</h1>
+                                <h4>Reserve já seu horário!</h4>
+                                <a href="./agenda.php"><button type="button" class="btn btn-outline-success">Clique e confira</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/culturamaker-banner.png" alt="CITec" />
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
@@ -37,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                </div>                    
+                </div>
                 <div class="item">
                     <img src="./img/tecnomaker-banner.png" alt="CITec" />
                     <div class="cover">
@@ -52,20 +66,6 @@
                         </div>
                     </div>
                 </div>                
-                <div class="item">
-                    <img src="./img/citec-2.jpg" alt="CITec" />
-                    <div class="cover">
-                        <div class="container">
-                            <div class="header-content">
-                                <div class="line animated bounceInLeft"></div>
-                                <h2>Desenvolva o seu projeto</h2>
-                                <h1>OPEN DAY</h1>
-                                <h4>Reserve já seu horário!</h4>
-                                <a href="./agenda.php"><button type="button" class="btn btn-outline-success">Clique e confira</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section class="pt-3 pb-5">
                 <div class="container">
