@@ -25,6 +25,7 @@
         <main>
             <section class="py-5">
                 <div class="container">
+                    <span class="page-history"><a href="./index.php">Início</a> / </span><span class="page-history-current">Cadastro de Projeto</span>
                     <h1 class="fw-light mb-3">Cadastro de Projeto</h1>
                     <div class="m-auto py-3 text-center form-sucess">
                         <img src="./img/svg/check.svg" class="check-svg animate__animated animate__tada" />
