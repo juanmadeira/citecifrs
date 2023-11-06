@@ -1,5 +1,67 @@
 @import url('./style.css');
 
+/* imagem estática */
+.projetos-carousel .item {
+	height: 30vh;
+	position: relative;
+}
+
+.projetos-carousel .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.projetos-carousel .item .cover {
+	padding: 75px 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+}
+
+.projetos-carousel .item .cover .header-content {
+	position: relative;
+	padding: 56px;
+	overflow: hidden;
+}
+
+.projetos-carousel .item .cover .header-content h2 {
+	font-weight: 300;
+	font-size: 2rem;
+	color: #fff;
+}
+.projetos-carousel .owl-item.active h1,
+.projetos-carousel .owl-item.active h2 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+
+.projetos-carousel .owl-item.active h4,
+.projetos-carousel .owl-item.active button {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: fadeInUp;
+	animation-delay: 0.3s;
+}
+
+.projetos-carousel .btn {
+	background-color: white;
+	border-radius: 0;
+	color: black;
+}
+
+/* projetos */
 .gallery-item img {
     max-width: 75%;
     max-height: 75%;
