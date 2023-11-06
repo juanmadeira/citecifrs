@@ -23,8 +23,9 @@
         ?>
         <!-- conteúdo principal -->
         <main>
-            <section class="py-5">
+            <section class="py-3">
                 <div class="container">
+                    <span class="page-history"><a href="./index.php">Início</a> / </span><span class="page-history-current">Agenda</span>
                     <h1 class="fw-light mb-3">Agenda</h1>
                     <iframe class="mb-3" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23189f42&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showDate=0&showPrint=0&showTz=1&showCalendars=0&hl=pt_BR&showTabs=0&src=Y182ZDFiM2EwNmEyYTY2YjJhZTQ0YjFkMGI2MDE3YjI2ODJhOGJmM2MyNjZjN2ZkZjc4M2YyN2JlOWJhYWIyZDQyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA" style="border-width:0" width="100%" height="720" frameborder="0" scrolling="no"></iframe>                </div>
                 </div>
@@ -41,6 +42,7 @@
                         <input type="submit" value="Enviar" />
                     </form>
                 </div>
+            </section>
         </main>
         <!-- footer -->
         <?php
