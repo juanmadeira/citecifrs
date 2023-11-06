@@ -62,12 +62,23 @@
 }
 
 /* projetos */
+.gallery-item {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-end;
+}
+
+.gallery-item a {
+	text-decoration: none;
+}
+
 .gallery-item img {
-    max-width: 75%;
-    max-height: 75%;
-    margin-bottom: 1em;
-    width: auto;
-    height: auto;
+	transition: .2s;
+}
+
+.gallery-item img:hover {
+	transition: .2s;
+	transform: scale(1.1);
 }
 
 .gallery-title {

@@ -152,10 +152,6 @@ nav .dropdown-item:active {
     border: 0;
 }
 
-.projetos .tecnomaker {
-    flex-flow: row-reverse nowrap;
-}
-
 .img-box {
     max-width: 250vw;
     flex: 0 0 250px;
@@ -163,6 +159,21 @@ nav .dropdown-item:active {
 
 .img-box img {
     max-width: 100%;
+}
+
+.page-history,
+.page-history a {
+    color: darkslategrey;
+}
+
+.page-history-current {
+    color: darkgreen;
+}
+
+.page-history,
+.page-history a,
+.page-history-current {
+    font-size: 0.75rem;
 }
 
 /* footer */

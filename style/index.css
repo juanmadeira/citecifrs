@@ -275,6 +275,11 @@
 	width: 100%;
 }
 
+/* projetos */
+.projetos .tecnomaker {
+    flex-flow: row-reverse nowrap;
+}
+
 /* media queries */
 @media (max-width: 768px) {
 	.inicio-carousel .item .cover .header-content h2 {
