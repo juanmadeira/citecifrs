@@ -23,9 +23,10 @@
         ?>
         <!-- conteúdo principal -->
         <main>
-            <section class="pt-5 pb-3">
+            <section class="py-3">
                 <div class="container">
-
+                    <div class="pb-2"><span class="page-history"><a href="../index.php">Início</a> / <a href="../projetos.php">Galeria de Projetos</a> / </span><span class="page-history-current">Projeto 1</span></div>
+                    <h1 class="fw-light mb-3">Projeto 1</h1>
                 </div>
             </section>
         </main>
