@@ -25,7 +25,7 @@
         <main>
             <div class="owl-carousel owl-theme inicio-carousel">
                 <div class="item">
-                    <img src="./img/citec-2.jpg" alt="CITec" />
+                    <img src="./img/citec-1.jpg" alt="CITec" />
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
@@ -47,7 +47,7 @@
                                 <h2>Projeto de ensino</h2>
                                 <h1>CULTURA MAKER</h1>
                                 <h4>Inscrições abertas para o minicurso de Impressão 3D</h4>
-                                <a href="./culturamaker.php"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
+                                <a href="#culturamaker"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 <h2>Projeto de extensão</h2>
                                 <h1>TECNOMAKER 4.0</h1>
                                 <h4>Oficina de Programação, Robótica e Modelagem 3D</h4>
-                                <a href="./tecnomaker.php"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
+                                <a href="#tecnomaker"><button type="button" class="btn btn-outline-success">Saiba mais</button></a>
                             </div>
                         </div>
                     </div>
@@ -160,16 +160,18 @@
             </div>
             <section class="projetos py-5">
                 <div class="container">
+                    <a id="culturamaker"></a>
                     <h2 class="fw-light">Cultura Maker</h2>
                     <div class="card culturamaker">
-                        <div class="img-box"><img src="./img/logo-cultura.png" class="img-fluid p-3" /></div>
+                        <div class="img-box"><img src="./img/culturamaker-logo.png" class="img-fluid" /></div>
                         <p>Baseando-se na ideia de que as pessoas devem ser capazes da fabricar, construir, reparar e alterar objetos dos mais variados tipos e com diversas funções, o Cultura Maker é um projeto ensino aberto para a comunidade acadêmica do IFRS Campus Rio Grande. É uma ótima oportunidade para desenvolver a criatividade através dos minicursos de modelagem, impressão 3D, corte à laser e Arduíno. As oficinas são abertas pra toda a comunidade acadêmica do IFRS - Campus Rio Grande, alunos do integrado, subsequente, superior e também para os professores do campus.</p>
                     </div>
                 </div>
                 <div class="container">
+                    <a id="tecnomaker"></a>
                     <h2 class="fw-light">TecnoMaker 4.0</h2>
                     <div class="card tecnomaker">
-                        <div class="img-box"><img src="./img/logo-tecnomaker.png" class="img-fluid p-3" /></div>
+                        <div class="img-box"><img src="./img/tecnomaker-logo.png" class="img-fluid" /></div>
                         <p>O TecnoMaker 4.0 é um projeto de extensão, ou seja, voltado para as pessoas que não estudam ou trabalham no IFRS - Campus Rio Grande. É focado na iniciação tecnológica nas escolas públicas de ensino fundamental de Rio Grande. Dentre os temas a serem abordados nas oficinas estão: pensamento computacional, robótica e Cultura Maker.</p>
                     </div>
                 </div>
