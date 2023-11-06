@@ -23,14 +23,15 @@
         ?>
         <!-- conteúdo principal -->
         <main>
-            <section class="pt-5 pb-3">
+            <section class="py-3">
                 <div class="container">
+                    <div class="pb-2"><span class="page-history"><a href="./index.php">Início</a> / </span><span class="page-history-current">Galeria de Projetos</span></div>
                     <h1 class="fw-light mb-3">Galeria de Projetos</h1>
                 </div>
             </section>
             <div class="owl-carousel owl-theme projetos-carousel">
                 <div class="item">
-                    <img src="./img/3d-objects-template.jpg" alt="CITec" />
+                    <img src="./img/template-3d-scenario.jpg" alt="Cenário de objetos 3D" />
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
@@ -41,32 +42,32 @@
                     </div>
                 </div>
             </div>
-            <section class="pt-3 pb-5">
+            <section class="py-3">
                 <div class="container">
                     <div class="row">
                         <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <a href="./projetos/projeto-1.php"><img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 1" /></a>
-                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title">PROJETO 1</h5></a>
+                            <a href="./projetos/projeto-1.php"><img src="./img/template-3d-object.png" class="img-fluid p-4 mb-4" alt="Projeto 1" /></a>
+                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title hover-u">PROJETO 1</h5></a>
                             <p class="gallery-text">Descrição do Projeto 1.</p>
                         </div>
                         <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 2" />
-                            <h5 class="gallery-title">PROJETO 2</h5>
+                            <a href="./projetos/projeto-1.php"><img src="./img/template-3d-object.png" class="img-fluid p-4 mb-4" alt="Projeto 2" /></a>
+                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title hover-u">PROJETO 2</h5></a>
                             <p class="gallery-text">Descrição do Projeto 2.</p>
                         </div>
                         <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
-                            <h5 class="gallery-title">PROJETO 3</h5>
+                            <a href="./projetos/projeto-1.php"><img src="./img/template-3d-object.png" class="img-fluid p-4 mb-4" alt="Projeto 3" /></a>
+                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title hover-u">PROJETO 3</h5></a>
                             <p class="gallery-text">Descrição do Projeto 3.</p>
-                        </div>    
+                        </div>
                         <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
-                            <h5 class="gallery-title">PROJETO 4</h5>
+                            <a href="./projetos/projeto-1.php"><img src="./img/template-3d-object.png" class="img-fluid p-4 mb-4" alt="Projeto 4" /></a>
+                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title hover-u">PROJETO 4</h5></a>
                             <p class="gallery-text">Descrição do Projeto 4.</p>
                         </div>
                         <div class="p-4 col-lg-4 col-md-6 col-sm-12 gallery-item">
-                            <img src="./img/3d-object-template.png" class="img-fluid mb-4" alt="Projeto 3" />
-                            <h5 class="gallery-title">PROJETO 5</h5>
+                            <a href="./projetos/projeto-1.php"><img src="./img/template-3d-object.png" class="img-fluid p-4 mb-4" alt="Projeto 5" /></a>
+                            <a href="./projetos/projeto-1.php"><h5 class="gallery-title hover-u">PROJETO 5</h5></a>
                             <p class="gallery-text">Descrição do Projeto 5.</p>
                         </div>
                     </div>
