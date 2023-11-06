@@ -158,7 +158,7 @@
             <div class="parallax-banner">
                 <h2>Conheça os nossos projetos!</h2>
             </div>
-            <section class="projetos py-5">
+            <section class="projetos pt-5 pb-3">
                 <div class="container">
                     <a id="culturamaker"></a>
                     <h2 class="fw-light">Cultura Maker</h2>
