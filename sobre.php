@@ -66,6 +66,7 @@
                         </figure>
                     </div>
                 </div>
+                <!-- iframe do google maps -->
                 <div class="container iframeLoc">
                     <div class="row">
                         <iframe class="iframeMap mb-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6764.114534335918!2d-52.09150219424012!3d-32.04064131640538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95119c6b173eeb13%3A0xbaa8517ea9d4b26b!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20Grande%20do%20Sul%20-%20Campus%20Rio%20Grande!5e0!3m2!1spt-BR!2sbr!4v1650932798829!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -74,7 +75,8 @@
                                 <p>Rua Engenheiro Alfredo Huch, 475</p>
                                 <p>Bairro Centro</p>
                                 <p>CEP 96201-460</p>
-                            </div>
+                            </p>
+                        </div>
                     </div>
                 </div> 
             </section>
