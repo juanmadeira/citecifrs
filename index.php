@@ -23,6 +23,7 @@
         ?>
         <!-- conteúdo principal -->
         <main>
+            <!-- carrossel inicial -->
             <div class="owl-carousel owl-theme inicio-carousel">
                 <div class="item">
                     <img src="./img/citec-1.jpg" alt="CITec" />
@@ -71,6 +72,7 @@
                 <div class="container">
                     <h1 class="fw-light">Início</h1>
                     <p>O Centro de Integração Tecnológica (CITec) compõe o Habitat de Inovação do IFRS Campus Rio Grande, tendo como o propósito ofertar um espaço de intersecção entre ensino, pesquisa e extensão, atendendo as comunidades interna e externa do campus na capacitação e execução de desenvolvimento de soluções para produtos e serviços, tendo como base conceitos de Cultura Maker, Ciência Cidadã e Sustentabilidade. Centrado nas experiências no tríade ensino-pesquisa-extensão, o projeto do CITec está estruturado em espaços flexíveis e colaborativos pensados para suportar diferentes iniciativas, voltado para o desenvolvimento e materialização de ideias, onde o indivíduo atua de modo criativo e autônomo, protagonista em todas as etapas, com o suporte da equipe no planejamento, criação, projeto, manufatura e análise da solução, concluindo o ciclo de desenvolvimento do produto.</p>
+                    <!-- carrossel das imagens do laboratório -->
                     <div class="owl-carousel lab-carousel">
                         <div class="item">
                             <img src="./img/citec-1.jpg" alt="CITec" />
@@ -92,6 +94,7 @@
                 </div>
                 <div class="container">
                     <h2 class="fw-light">Equipamentos</h1>
+                    <!-- carrossel dos equipamentos -->
                     <div class="owl-carousel owl-theme equip-carousel">
                         <div class="item">
                             <div class="item-image">
@@ -155,6 +158,7 @@
                     </div>
                 </div>
             </section>
+            <!-- banner em parallax para apresentação dos projetos -->
             <div class="parallax-banner">
                 <h2>Conheça os nossos projetos!</h2>
             </div>
