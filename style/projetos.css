@@ -87,7 +87,13 @@
 
 /* página de um projeto individual */
 .projeto-item {
-	border: #000 1px solid;
+	border: red 1px solid;
+}
+
+.projeto-item img {
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
 }
 
 .projeto-download a {
