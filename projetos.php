@@ -29,6 +29,7 @@
                     <h1 class="fw-light mb-3">Galeria de Projetos</h1>
                 </div>
             </section>
+            <!-- "carrossel" com aviso de cadastro de projeto -->
             <div class="owl-carousel owl-theme projetos-carousel">
                 <div class="item">
                     <img src="./img/template-3d-scenario.jpg" alt="Cenário de objetos 3D" />
