@@ -129,17 +129,6 @@ form input[type="button"]:hover {
 	background: var(--box-button-color);
 }
 
-#fillmessage-name,
-#fillmessage-email,
-#fillmessage-equip,
-#fillmessage-subject,
-#fillmessage-message {
-    display: none;
-	color: red;
-    font-size: 0.7em;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .form-sucess p {
 	font-size: 1.2rem
 }

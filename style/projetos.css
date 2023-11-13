@@ -56,9 +56,9 @@
 }
 
 .projetos-carousel .btn {
-	background-color: white;
+	background-color: #fff;
 	border-radius: 0;
-	color: black;
+	color: #000;
 }
 
 /* projetos */
@@ -83,4 +83,16 @@
 
 .gallery-title {
     font-weight: bold;
+}
+
+/* página de um projeto individual */
+
+.projeto-item img {
+	width: 100%;
+	transition: .2s;
+}
+
+.projeto-item img:hover {
+	transition: .2s;
+	transform: scale(1.1);
 }
