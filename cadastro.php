@@ -51,11 +51,15 @@
                             </span>
                             
                             <!-- datas de início e término do projeto -->
-                            <span class="datas">
-                                <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
-                                <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
-                                <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
-                                <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
+                            <span class="datas row">
+                                <span class="col">
+                                    <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
+                                    <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
+                                </span>
+                                <span class="col">
+                                    <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
+                                    <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
+                                </span>
                             </span>
 
                             <!-- área de atuação -->
@@ -78,11 +82,22 @@
                                 <option value="empreendimento">Empreendimento</option>
                             </select>
 
-                            <!-- imagen -->
-                            <p>Envie uma imagem do seu projeto:</p>
-                            <label class="mb-3 file-button" for="image">
-                                <input type="file" name="imagem" id="image" accept="image/png, image/jpeg" />
-                            </label> 
+                            <span class="row mt-3">
+                                <span class="col">
+                                    <!-- imagem -->
+                                    <p>Envie uma imagem do seu projeto (.jpg, .jpeg, .png):</p>
+                                    <label class="mb-5 file-button" for="image">
+                                        <input type="file" name="imagem" id="image" accept="image/png, image/jpg, image/jpeg" />
+                                    </label>
+                                </span>
+                                <span class="col">
+                                    <!-- cadFile -->
+                                    <p>Envie o modelo CAD do seu projeto (.dxf, .dwg):</p>
+                                    <label class="mb-5 file-button" for="modelo">
+                                        <input type="file" name="modelo" id="modelo" accept="image/dxf, image/dwg" />
+                                    </label> 
+                                </span>
+                            </span>
 
                             <!-- equipamentos -->
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
@@ -91,6 +106,8 @@
                             <!-- descrição -->
                             <label class="mb-2" for="about">Descrição:</label>
                             <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
+
+                             
                         </fieldset>
                         <input type="submit" name="submit" value="Enviar" />
                     </form>
