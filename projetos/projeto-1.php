@@ -26,14 +26,15 @@
             <section class="py-3">
                 <div class="container">
                     <div class="pb-2"><span class="page-history"><a href="../index.php">Início</a> / <a href="../projetos.php">Galeria de Projetos</a> / </span><span class="page-history-current">Projeto 1</span></div>
-                    <h1 class="fw-light mb-5">Projeto 1</h1>
-                    <!-- imagem do projeto -->
+                    <h1 class="fw-light">Projeto 1</h1>
                     <div class="row">
-                        <span class="col">
-                            <div class="projeto-item mb-5">
+                        <!-- imagem do projeto -->
+                        <span class="col p-5">
+                            <div class="projeto-item d-flex">
                                 <img class="img-fluid" src="../uploads/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
                             </div>
                         </span>
+                        <!-- informações do projeto -->
                         <span class="col-sm-3 d-flex flex-column justify-content-around p-3">
                             <span>
                                 <p class="fw-bold fs-5">Área de atuação:</p>
@@ -49,11 +50,10 @@
                             </span>
                         </span>
                     </div>
-                    <!-- informações do projeto -->
                     <div class="projeto-info d-flex flex-column flex-wrap justify-content-start">
-                        <p class="fw-bold fs-5">Equipamentos utilizados:</p>
-                        <p>.....</p>
                         <p class="fw-bold fs-5">Descrição:</p>
+                        <p>.....</p>
+                        <p class="fw-bold fs-5">Equipamentos utilizados:</p>
                         <p>.....</p>
                         <p class="fw-bold fs-5">Faça download do(s) arquivo(s)</p>
                         <p class="projeto-download"><a href=""><i class="bi bi-download p-3"></i>download.dxf</a></p>
