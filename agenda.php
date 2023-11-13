@@ -33,12 +33,12 @@
                     <h2 class="fw-light mb-3">Contato</h1>
                     <p>Envie um e-mail para nossa equipe e reserve já o seu horário!</p>
                     <form name="form" id="form" method="POST" action="./config/send_mail.php">
+                        <!-- e-mail -->    
                         <input type="email" name="email" id="email" class="form-control mail-field mb-3" placeholder="Insira seu e-mail..." required />
-                        
+                        <!-- assunto -->
                         <input type="text" name="subject" id="subject" class="form-control mb-3" placeholder="Insira o assunto..." required />
-                        
+                        <!-- mensagem -->
                         <textarea name="mensagem" id="mensagem" class="form-control mb-3" rows="6" placeholder="Escreva a mensagem..." required></textarea>
-                        
                         <input type="submit" value="Enviar" />
                     </form>
                 </div>
