@@ -31,7 +31,7 @@
                         <!-- imagem do projeto -->
                         <span class="col p-5">
                             <div class="projeto-item d-flex">
-                                <img class="img-fluid" src="../uploads/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
+                                <img class="img-fluid" src="../uploads-img/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
                             </div>
                         </span>
                         <!-- informações do projeto -->
