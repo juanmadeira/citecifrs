@@ -1,6 +1,6 @@
 # citecifrs
 
-[![Logo CITec - IFRS](https://github.com/juanmadeira/citecifrs/blob/main/img/logo-png.png)](https://juanmadeira.github.io/citecifrs)
+[![Logo CITec - IFRS](https://github.com/juanmadeira/citecifrs/blob/main/img/citec-logo.png)](https://juanmadeira.github.io/citecifrs)
 <br>
 <br>
 <p>Site destinado ao Centro de Integração Tecnológica - IFRS Campus Rio Grande.</p>
