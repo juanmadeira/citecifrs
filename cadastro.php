@@ -33,20 +33,24 @@
                         <?php endif ?>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
+                            <!-- nome -->
                             <label class="mb-2" for="name">Nome completo:</label>
                             <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." />
                             
+                            <!-- e-mail -->
                             <label class="mb-2" for="email">Endereço de e-mail:</label>
                             <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." />
                         </fieldset>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">2</span> Informações do projeto</legend>
+                            <!-- tipo de atividade -->
                             <label class="mb-2" for="activity">Atividade:</label>
                             <span class="radio-options">
                                 <input class="mb-3" type="radio" name="atividade" value="individual" id="individual" /> Individual
                                 <input class="mb-3" type="radio" name="atividade" value="grupo" id="grupo" /> Grupo
                             </span>
-
+                            
+                            <!-- datas de início e término do projeto -->
                             <span class="datas">
                                 <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
                                 <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
@@ -54,6 +58,7 @@
                                 <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
                             </span>
 
+                            <!-- área de atuação -->
                             <label class="mb-2" for="area">Área de atuação:</label>
                             <select class="mb-3" id="area" name="area">
                                 <option value="arte_criatividade">Arte e Criatividade</option>
@@ -73,14 +78,17 @@
                                 <option value="empreendimento">Empreendimento</option>
                             </select>
 
+                            <!-- imagen -->
                             <p>Envie uma imagem do seu projeto:</p>
                             <label class="mb-3 file-button" for="image">
                                 <input type="file" name="imagem" id="image" accept="image/png, image/jpeg" />
                             </label> 
 
+                            <!-- equipamentos -->
                             <label class="mb-2" for="about">Equipamentos utilizados:</label>
                             <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3"></textarea>
 
+                            <!-- descrição -->
                             <label class="mb-2" for="about">Descrição:</label>
                             <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
                         </fieldset>
