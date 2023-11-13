@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./img/citec-icon.png" />
+        <link rel="icon" href="../img/citec-icon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,7 +26,16 @@
             <section class="py-3">
                 <div class="container">
                     <div class="pb-2"><span class="page-history"><a href="../index.php">Início</a> / <a href="../projetos.php">Galeria de Projetos</a> / </span><span class="page-history-current">Projeto 1</span></div>
-                    <h1 class="fw-light mb-3">Projeto 1</h1>
+                    <h1 class="fw-light mb-5">Projeto 1</h1>
+                    <!-- imagem do projeto -->
+                    <div class="projeto-item w-25 d-flex justify-content-start mb-5">
+                        <img src="../uploads/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
+                    </div>
+                    <!-- informações do projeto -->
+                    <div class="projeto-info">
+                        <p class="fw-bold fs-5">Área de atuação:</p>
+                        <p>Arte e Criatividade</p>
+                    </div>
                 </div>
             </section>
         </main>
