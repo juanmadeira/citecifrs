@@ -13,7 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script src="./script/script.js" defer></script>
+        <script src="../script/script.js" defer></script>
         <title>Galeria de Projetos | CITec IFRS</title>
     </head>
     <body>
@@ -28,13 +28,35 @@
                     <div class="pb-2"><span class="page-history"><a href="../index.php">Início</a> / <a href="../projetos.php">Galeria de Projetos</a> / </span><span class="page-history-current">Projeto 1</span></div>
                     <h1 class="fw-light mb-5">Projeto 1</h1>
                     <!-- imagem do projeto -->
-                    <div class="projeto-item w-25 d-flex justify-content-start mb-5">
-                        <img src="../uploads/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
+                    <div class="row">
+                        <span class="col">
+                            <div class="projeto-item mb-5">
+                                <img class="img-fluid" src="../uploads/nome-sobrenome-2023-11-06-08.12.16.png" alt="Projeto 1">
+                            </div>
+                        </span>
+                        <span class="col-sm-3 d-flex flex-column justify-content-around p-3">
+                            <span>
+                                <p class="fw-bold fs-5">Área de atuação:</p>
+                                <p>Arte e Criatividade</p>
+                                <p class="fw-bold fs-5">Tipo de atividade:</p>
+                                <p>Individual</p>
+                            </span>
+                            <span>
+                                <p class="fw-bold fs-5">Data de início:</p>
+                                <p>2023-01-01</p>
+                                <p class="fw-bold fs-5">Data de término:</p>
+                                <p>2023-12-31</p>
+                            </span>
+                        </span>
                     </div>
                     <!-- informações do projeto -->
-                    <div class="projeto-info">
-                        <p class="fw-bold fs-5">Área de atuação:</p>
-                        <p>Arte e Criatividade</p>
+                    <div class="projeto-info d-flex flex-column flex-wrap justify-content-start">
+                        <p class="fw-bold fs-5">Equipamentos utilizados:</p>
+                        <p>.....</p>
+                        <p class="fw-bold fs-5">Descrição:</p>
+                        <p>.....</p>
+                        <p class="fw-bold fs-5">Faça download do(s) arquivo(s)</p>
+                        <p class="projeto-download"><a href=""><i class="bi bi-download p-3"></i>download.dxf</a></p>
                     </div>
                 </div>
             </section>
