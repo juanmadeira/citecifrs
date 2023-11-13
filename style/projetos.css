@@ -86,13 +86,10 @@
 }
 
 /* página de um projeto individual */
-
-.projeto-item img {
-	width: 100%;
-	transition: .2s;
+.projeto-item {
+	border: #000 1px solid;
 }
 
-.projeto-item img:hover {
-	transition: .2s;
-	transform: scale(1.1);
+.projeto-download a {
+	color: #0000EE;
 }
