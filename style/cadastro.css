@@ -70,11 +70,6 @@ form .datas input {
 	resize: none;
 }
 
-#dataTitulo1 { order: 0; }
-#dataTitulo2 { order: 1; }
-#dataCampo1 { order: 2; }
-#dataCampo2 { order: 3; }
-
 form input[type="text"]:focus,
 form input[type="date"]:focus,
 form input[type="datetime"]:focus,
