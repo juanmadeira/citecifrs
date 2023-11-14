@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $_POST["mensagem"];
     
     // configurações para o e-mail
-    $destinatario = "juanpmad@outlook.com"; // e-mail do destinatário
+    $destinatario = "juanpmad@gmail.com"; // e-mail do destinatário
     $assunto = "Nova mensagem do formulário de contato";
     $headers = "From: $email"; // e-mail do remetente
     
