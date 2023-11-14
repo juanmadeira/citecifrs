@@ -19,42 +19,39 @@
         $equipamentos = $_POST['equipamentos'];
     }
 
-    // verif. campo modelo
-        $cad_name = $_FILES['modelo']['name'];
-        $cad_size = $_FILES['modelo']['size'];
-        $cad_temp_name = $_FILES['modelo']['tmp_name'];
-        $cad_img_error = $_FILES['modelo']['error'];
-        if ($cad_img_error === 0) {
-            // verifica se o tamanho do modelo é permitido
-            if ($cad_size > 10000000) {
-                $error = "O modelo enviado é muito grande.";
-                header ("Location: ../cadastro.php?error=$error");
-            } else {
-    
-                $cad_ex = pathinfo($cad_name, PATHINFO_EXTENSION);
-                $cad_ex_lc = strtolower($cad_ex);
-    
-                // define extensões permitidas para o modelo
-                $cad_allowed_exs = array("dxf", "dwg"); 
-    
-                if (in_array($cad_ex_lc, $cad_allowed_exs)) {
-                    // altera o nome do modelo
-                    date_default_timezone_set("Brazil/East");
-                    $cad_ext = strtolower(substr($_FILES['imagem']['name'],-4));
-                    $cad_novo_nome = preg_replace('/[ -]+/' , '-' , $_POST['nome']);
-    
-                    $new_cad_name = $cad_novo_nome . "-" . date("Y-m-d-H.i.s") . $cad_ext;
-                    $cad_upload_path = '../uploads-cad/'.$new_cad_name;
-                    move_uploaded_file($cad_tmp_name, $cad_upload_path);
-                } else {
-                    $error = "O formato de modelo inválido.";
-                    header ("Location: ../cadastro.php?error=$error");
-                }
-            }
-        } else {
-            $error = "É necessário enviar um modelo.";
+    // verif. campo modelo ** OPCIONAL
+    $cad_name = $_FILES['modelo']['name'];
+    $cad_size = $_FILES['modelo']['size'];
+    $cad_tmp_name = $_FILES['modelo']['tmp_name'];
+    $cad_error = $_FILES['modelo']['error'];
+    if ($cad_error === 0) {
+        // verifica se o tamanho do modelo é permitido
+        if ($cad_size > 10000000) {
+            $error = "O modelo enviado é muito grande.";
             header ("Location: ../cadastro.php?error=$error");
+        } else {
+
+            $cad_ex = pathinfo($cad_name, PATHINFO_EXTENSION);
+            $cad_ex_lc = strtolower($cad_ex);
+
+            // define extensões permitidas para o modelo
+            $cad_allowed_exs = array("dxf", "dwg"); 
+
+            if (in_array($cad_ex_lc, $cad_allowed_exs)) {
+                // altera o nome do modelo
+                date_default_timezone_set("Brazil/East");
+                $cad_ext = strtolower(substr($_FILES['modelo']['name'],-4));
+                $cad_novo_nome = preg_replace('/[ -]+/' , '-' , $_POST['nome']);
+
+                $new_cad_name = $cad_novo_nome . "-" . date("Y-m-d-H.i.s") . $cad_ext;
+                $cad_upload_path = '../uploads-cad/'.$new_cad_name;
+                move_uploaded_file($cad_tmp_name, $cad_upload_path);
+            } else {
+                $error = "O formato de modelo é inválido.";
+                header ("Location: ../cadastro.php?error=$error");
+            }
         }
+    } 
 
     // verif. campo imagem
     $img_name = $_FILES['imagem']['name'];
@@ -84,7 +81,7 @@
                 $img_upload_path = '../uploads-img/'.$new_img_name;
                 move_uploaded_file($tmp_name, $img_upload_path);
             } else {
-                $error = "O formato de imagem inválido.";
+                $error = "O formato de imagem é inválido.";
                 header ("Location: ../cadastro.php?error=$error");
             }
         }
@@ -138,7 +135,7 @@
     }
 
     if ($error === "") {
-        $sql = "INSERT INTO projetos(nome, email, atividade, dataInicio, dataTermino, area, imagem, equipamentos, descricao) VALUES('$nome', '$email', '$atividade', '$dataInicio', '$dataTermino', '$area', '$new_img_name', '$equipamentos', '$descricao')";
+        $sql = "INSERT INTO projetos(nome, email, atividade, dataInicio, dataTermino, area, imagem, modelo, equipamentos, descricao) VALUES('$nome', '$email', '$atividade', '$dataInicio', '$dataTermino', '$area', '$new_img_name', '$new_cad_name', '$equipamentos', '$descricao')";
         mysqli_query($conn, $sql);
         header ("Location: ../cadastro-sucess.php");
     }
