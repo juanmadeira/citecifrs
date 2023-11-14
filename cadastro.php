@@ -94,7 +94,7 @@
                                     <!-- cadFile -->
                                     <p>Envie o modelo CAD do seu projeto (.dxf, .dwg):</p>
                                     <label class="mb-5 file-button" for="modelo">
-                                        <input type="file" name="modelo" id="modelo" accept="image/dxf, image/dwg" />
+                                        <input type="file" name="modelo" id="modelo" accept="dxf, dwg" />
                                     </label> 
                                 </span>
                             </span>
