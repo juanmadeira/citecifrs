@@ -86,10 +86,6 @@
 }
 
 /* página de um projeto individual */
-.projeto-item {
-	border: red 1px solid;
-}
-
 .projeto-item img {
 	margin: 0 auto;
 	justify-content: center;
