@@ -33,17 +33,17 @@
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">1</span> Informações do aluno</legend>
                             <!-- nome -->
-                            <label class="mb-2" for="name">Nome completo:</label>
+                            <label class="mb-2" for="name">Nome completo:<span class="form-obrigatory"> *</span></label>
                             <input class="mb-3" type="text" name="nome" id="name" placeholder="Insira seu nome..." />
                             
                             <!-- e-mail -->
-                            <label class="mb-2" for="email">Endereço de e-mail:</label>
+                            <label class="mb-2" for="email">Endereço de e-mail:<span class="form-obrigatory"> *</span></label>
                             <input class="mb-3" type="email" name="email" id="email" placeholder="Insira seu e-mail..." />
                         </fieldset>
                         <fieldset>
                             <legend class="mb-3"><span class="bubble">2</span> Informações do projeto</legend>
                             <!-- tipo de atividade -->
-                            <label class="mb-2" for="activity">Atividade:</label>
+                            <label class="mb-2" for="activity">Atividade:<span class="form-obrigatory"> *</span></label>
                             <span class="radio-options">
                                 <input class="mb-3" type="radio" name="atividade" value="individual" id="individual" /> Individual
                                 <input class="mb-3" type="radio" name="atividade" value="grupo" id="grupo" /> Grupo
@@ -52,17 +52,17 @@
                             <!-- datas de início e término do projeto -->
                             <span class="datas row">
                                 <span class="col">
-                                    <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:</label>
+                                    <label class="mb-2" for="date" id="dataTitulo1">Data de início do projeto:<span class="form-obrigatory"> *</span></label>
                                     <input class="mb-3" type="date" name="dataInicio" id="dataCampo1" />
                                 </span>
                                 <span class="col">
-                                    <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:</label>
+                                    <label class="mb-2" for="date" id="dataTitulo2">Data de término do projeto:<span class="form-obrigatory"> *</span></label>
                                     <input class="mb-3" type="date" name="dataTermino" id="dataCampo2" />
                                 </span>
                             </span>
 
                             <!-- área de atuação -->
-                            <label class="mb-2" for="area">Área de atuação:</label>
+                            <label class="mb-2" for="area">Área de atuação:<span class="form-obrigatory"> *</span></label>
                             <select class="mb-3" id="area" name="area">
                                 <option value="arte_criatividade">Arte e Criatividade</option>
                                 <option value="mecatronicos">Dispositivos Mecatrônicos</option>
@@ -84,7 +84,7 @@
                             <span class="row mt-3">
                                 <span class="col">
                                     <!-- imagem -->
-                                    <p>Envie uma imagem do seu projeto (.jpg, .jpeg, .png):</p>
+                                    <p>Envie uma imagem do seu projeto (.jpg, .jpeg, .png):<span class="form-obrigatory"> *</span></p>
                                     <label class="mb-5 file-button" for="image">
                                         <input type="file" name="imagem" id="image" accept="image/png, image/jpg, image/jpeg" />
                                     </label>
@@ -99,11 +99,11 @@
                             </span>
 
                             <!-- equipamentos -->
-                            <label class="mb-2" for="about">Equipamentos utilizados:</label>
+                            <label class="mb-2" for="about">Equipamentos utilizados:<span class="form-obrigatory"> *</span></label>
                             <textarea class="mb-3" name="equipamentos" id="equip" placeholder="Equipamentos / insumos utilizados na(s) atividade(s)..." rows="3"></textarea>
 
                             <!-- descrição -->
-                            <label class="mb-2" for="about">Descrição:</label>
+                            <label class="mb-2" for="about">Descrição:<span class="form-obrigatory"> *</span></label>
                             <textarea class="mb-3" name="descricao" placeholder="Sobre o seu projeto..." rows="6"></textarea>
 
                              
