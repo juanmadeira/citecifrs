@@ -124,6 +124,10 @@ form input[type="button"]:hover {
 	background: var(--box-button-color);
 }
 
+.form-obrigatory {
+	color: #ff0000;
+}
+
 .form-sucess p {
 	font-size: 1.2rem
 }
