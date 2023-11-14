@@ -50,11 +50,11 @@
                         </span>
                     </div>
                     <div class="projeto-info d-flex flex-column flex-wrap justify-content-start">
-                        <p class="fw-bold fs-5">Descrição:</p>
-                        <p>.....</p>
-                        <p class="fw-bold fs-5">Equipamentos utilizados:</p>
-                        <p>.....</p>
-                        <p class="fw-bold fs-5">Faça download do(s) arquivo(s)</p>
+                        <p class="fw-bold fs-5 my-3">Descrição:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="fw-bold fs-5 my-3">Equipamentos utilizados:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="fw-bold fs-5 my-3">Faça download do(s) arquivo(s)</p>
                         <p class="projeto-download"><a href=""><i class="bi bi-download p-3"></i>download.dxf</a></p>
                     </div>
                 </div>
